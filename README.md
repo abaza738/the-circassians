@@ -9,6 +9,10 @@ This project is made possible by the incredible contributors who form the core o
 Your dedication, ideas, and suggestions—no matter how big or small—are deeply appreciated.
 Thank you for helping bring this project to life!
 
+- [ShoganA](https://github.com/AbedShowgan)
+- Judy
+- `sidkid`
+
 ## Contributing
 
 ### Content
