@@ -1,0 +1,36 @@
+body {
+  font-family: 'Manrope', serif;
+  font-size: 15px;
+  font-display: swap;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  margin-top: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-heading;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
