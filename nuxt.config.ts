@@ -24,12 +24,18 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode'
   ],
+
+  colorMode: {
+    classSuffix: ''
+  },
 
   tailwindcss: {
     editorSupport: true,
     config: {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {

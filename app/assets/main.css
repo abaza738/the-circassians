@@ -1,3 +1,5 @@
+@import url(./transitions.css);
+
 body {
   font-family: 'Manrope', serif;
   font-size: 15px;
@@ -20,7 +22,6 @@ h3,
 h4 {
   @apply font-heading;
   line-height: 1.1;
-  font-weight: 600;
 }
 
 @keyframes hover {

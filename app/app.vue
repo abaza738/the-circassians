@@ -7,9 +7,9 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Circassians',
+  title: 'The Circassians',
   bodyAttrs: {
-    class: 'flex flex-col bg-night text-accent-50 min-h-[100dvh]'
+    class: 'flex flex-col bg-accent-50 dark:bg-night text-night dark:text-accent-50 min-h-[100dvh]'
   }
 })
 </script>
