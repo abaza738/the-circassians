@@ -46,7 +46,9 @@ cd the-circassians
 
 # Enable pnpm, If disabled:
 corepack enable # Enable pnpm, If disabled
-corepack prepare pnpm@latest --activate
+# Activate pnpm
+corepack prepare pnpm@latest --activate 
+
 # Install dependencies:
 pnpm install
 
