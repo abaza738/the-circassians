@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 w-full text-sm text-accent-50 border-b border-night/10 dark:border-accent-50/10 bg-primary-800/80 backdrop-blur-md z-20">
+  <nav class="sticky top-0 w-full text-sm text-accent-50 border-b-2 border-accent bg-primary-800/80 backdrop-blur-md z-20">
     <ul class="flex items-center gap-6 container mx-auto p-4 md:px-0">
       <NuxtLink :to="{ name: 'home' }">
         <h2 class="text-lg m-0">The Circassians</h2>
