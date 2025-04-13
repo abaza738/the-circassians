@@ -28,12 +28,25 @@ Knowledge in JavaScript, TypeScript, or any front-end framework would suffice to
 > If you are not familiar with any of the above, and you still want to contribute, you are more than welcome to open issues, submit pull requests, and open disucssions. The team is friendly, and can help you find your feet and get started learning this framework!
 
 ## Setup
+### Requirements:
+- **NodeJS** - JavaScript Runtime Environment
+- **npm** - package manager for Node
+- **pnpm** - a diskspace efficient alternative to npm
+- **nvm [Optional]** - Node Version Manager, to manage npm versions <br>
 
+### Notes: 
+- If you do not have NVM and prefer to use it, Please Download `nvm-setup` and install it from [The NVM Github Repository](https://github.com/coreybutler/nvm-windows/releases)
+
+
+**Run CMD/Powershell/Git Bash as Administrator**  
 ```bash
 # Clone
 git clone https://github.com/abaza738/the-circassians.git
 cd the-circassians
 
+# Enable pnpm, If disabled:
+corepack enable # Enable pnpm, If disabled
+corepack prepare pnpm@latest --activate
 # Install dependencies:
 pnpm install
 
