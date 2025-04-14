@@ -11,7 +11,8 @@ Thank you for helping bring this project to life!
 
 - [ShoganA](https://github.com/AbedShowgan)
 - Judy
-- `sidkid`
+- Madin
+- Patlichan
 
 ## Contributing
 
