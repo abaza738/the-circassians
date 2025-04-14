@@ -7,13 +7,6 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  fonts: {
-    families: [
-      { name: 'Rubik Wet Paint', provider: 'google' },
-      { name: 'Playfair Display', provider: 'google' },
-      { name: 'Manrope', provider: 'google' }
-    ]
-  },
   future: {
     compatibilityVersion: 4
   },
@@ -25,13 +18,30 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/i18n'
   ],
 
+  // Modules options
   colorMode: {
     classSuffix: ''
   },
-
+  fonts: {
+    families: [
+      { name: 'Rubik Wet Paint', provider: 'google' },
+      { name: 'Playfair Display', provider: 'google' },
+      { name: 'Manrope', provider: 'google' }
+    ]
+  },
+  i18n: {
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    locales: [
+      { code: 'en', name: 'English', file: 'en.ts', isCatchallLocale: true },
+      { code: 'ad', name: 'Circassian', file: 'ad.ts' },
+      { code: 'tr', name: 'Turkish', file: 'tr.ts' }
+    ]
+  },
   tailwindcss: {
     editorSupport: true,
     config: {

@@ -1,6 +1,6 @@
 <template>
   <div class="flex-1 flex flex-col">
-    <section class="container relative flex flex-col items-start justify-center h-[100vh] gap-8 px-4 md:px-8 mx-auto">
+    <section class="container relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 px-4 md:px-8 mx-auto">
       <div class="absolute top-0 left-0 w-full h-full z-[0]">
         <video class="h-full object-cover" autoplay loop muted>
           <source src="/video/hero.mp4" >
@@ -10,9 +10,9 @@
       <!-- Overlay -->
       <div class="absolute top-0 left-0 w-full h-full z-[0] bg-night-50/90 dark:bg-night/90" />
 
-      <NuxtImg src="/images/circassian-flag.svg" class="w-auto h-[70px] sm:h-[100px] rounded z-10" />
+      <NuxtImg src="/images/full-circassian-flag.svg" class="w-auto h-[70px] sm:h-[100px] rounded z-10" />
 
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl z-10">The Circassian <span class="font-bold">Genocide</span></h1>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl z-10">{{ $t('title') }}</h1>
 
       <h3 class="text-2xl sm:text-4xl z-10">Nation <span class="font-bold">Erased</span> — People <span class="font-bold">Live</span></h3>
 
@@ -27,20 +27,6 @@
         </button>
       </article>
     </section>
-
-    <div class="bg-primary-700">
-      <section class="container mx-auto p-4 md:p-8">
-        <h2 class="text-5xl">Section</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, tempore sint vel voluptates corrupti recusandae architecto sapiente quidem consequatur perspiciatis consequuntur praesentium asperiores excepturi aut? Impedit fugit autem natus inventore!</p>
-      </section>
-    </div>
-
-    <div class="bg-accent-50 text-night">
-      <section class="container mx-auto p-4 md:p-8">
-        <h2 class="text-5xl">Section</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, tempore sint vel voluptates corrupti recusandae architecto sapiente quidem consequatur perspiciatis consequuntur praesentium asperiores excepturi aut? Impedit fugit autem natus inventore!</p>
-      </section>
-    </div>
   </div>
 </template>
 
