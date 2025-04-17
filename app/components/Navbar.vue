@@ -5,13 +5,13 @@
         <h2 class="text-lg m-0">The Circassians</h2>
       </NuxtLink>
       <li>
-        <NuxtLink to="/wip">About</NuxtLink>
+        <NuxtLink active-class="font-bold" :to="{ name: 'who' }">Who?</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/wip">Map</NuxtLink>
+        <NuxtLink active-class="font-bold" :to="{ name: 'where' }">Where?</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/wip">History</NuxtLink>
+        <NuxtLink active-class="font-bold" :to="{ name: 'history' }">When?</NuxtLink>
       </li>
 
       <div class="flex-1" />

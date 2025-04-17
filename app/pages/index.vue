@@ -22,9 +22,19 @@
           <br>This is their story—remembered, reclaimed, and finally told.
         </p>
 
-        <button class="cta my-8 py-4 px-10 rounded transition-all duration-300 text-sm font-bold tracking-widest uppercase outline-none border-none">
-          Learn More
-        </button>
+        <div class="mt-8">
+          <NuxtLink :to="{ name: 'who' }">
+            <UiDisplayButton class="me-4">Who We Are</UiDisplayButton>
+          </NuxtLink>
+
+          <NuxtLink :to="{ name: 'where' }">
+            <UiDisplayButton class="me-4">Where We Are Now</UiDisplayButton>
+          </NuxtLink>
+
+          <NuxtLink :to="{ name: 'history' }">
+            <UiDisplayButton class="me-4">History</UiDisplayButton>
+          </NuxtLink>
+        </div>
       </article>
     </section>
   </div>
@@ -39,24 +49,5 @@ definePageMeta({
 <style scoped>
 .hover {
   animation: hover 2s ease-in-out infinite;
-}
-
-button.cta {
-  --button-color: 0, 0, 0;
-  .dark & {
-    --button-color: 255, 255, 255;
-  }
-
-  border: 2px solid rgba(var(--button-color), 0.10);
-  border-right: 2px solid rgba(var(--button-color), 0.20);
-  border-bottom: 2px solid rgba(var(--button-color), 0.20);
-  
-  &:hover {
-    background-color: rgba(var(--button-color), 0.08);
-    border-top: 2px solid rgba(var(--button-color), 0.20);
-    border-left: 2px solid rgba(var(--button-color), 0.20);
-    border-right: 2px solid rgba(var(--button-color), 0.40);
-    border-bottom: 2px solid rgba(var(--button-color), 0.40);
-  }
 }
 </style>
