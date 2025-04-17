@@ -23,7 +23,9 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+
+    '@vueuse/motion/nuxt'
   ],
 
   // Modules options
