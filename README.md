@@ -28,6 +28,8 @@ Knowledge in JavaScript, TypeScript, or any front-end framework would suffice to
 
 > If you are not familiar with any of the above, and you still want to contribute, you are more than welcome to open issues, submit pull requests, and open disucssions. The team is friendly, and can help you find your feet and get started learning this framework!
 
+Please read the [development guidelines](./docs/Development.md) for details.
+
 ## Setup
 ### Requirements:
 - **NodeJS** - JavaScript Runtime Environment
