@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
+    pageTransition: {
+      appear: true,
+      mode: 'out-in'
+    },
     rootAttrs: {
       class: 'flex-1 flex flex-col'
     }
