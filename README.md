@@ -21,9 +21,9 @@ Thank you for helping bring this project to life!
 We need members to help add accurate historical events and information, in addition to proof-reading existing content.  
 If you want to help with this part of the project, please contact [ShoganA](https://github.com/AbedShowgan) or [Maher](https://github.com/abaza738).  <br> 
 
-Furthermore, we have a public [Google Drive Folder](https://drive.google.com/drive/u/3/folders/1KtSgGqa-YXcYUdCXHCGjqNHsNL14i1ay) which you can freely visit, and add content <br> 
-that you believe will be relevant to The Circassian Genocide.  
-Such as Documents, Images and videos.  
+Furthermore, we have a public [Google Drive Folder](https://drive.google.com/drive/u/3/folders/1KtSgGqa-YXcYUdCXHCGjqNHsNL14i1ay) which you can freely visit,  <br> 
+and add content that you believe will be relevant to The Circassian Genocide.  
+Such as Documents, Images and Videos.  
 
 ### Development
 
