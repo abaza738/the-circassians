@@ -16,14 +16,7 @@ Thank you for helping bring this project to life!
 
 ## Contributing
 
-### Content
-
-We need members to help add accurate historical events and information, in addition to proof-reading existing content.  
-If you want to help with this part of the project, please contact [ShoganA](https://github.com/AbedShowgan) or [Maher](https://github.com/abaza738).  <br> 
-
-Furthermore, we have a public [Google Drive Folder](https://drive.google.com/drive/u/3/folders/1KtSgGqa-YXcYUdCXHCGjqNHsNL14i1ay) which you can freely visit,  <br> 
-and add content that you believe will be relevant to The Circassian Genocide.  
-Such as Documents, Images and Videos.  
+Please refer to our [Contribution Guideline](./docs/Contribution%20Guideline.md).
 
 ### Development
 
@@ -32,20 +25,13 @@ Knowledge in JavaScript, TypeScript, or any front-end framework would suffice to
 
 > If you are not familiar with any of the above, and you still want to contribute, you are more than welcome to open issues, submit pull requests, and open disucssions. The team is friendly, and can help you find your feet and get started learning this framework!
 
-Please read the [development guidelines](./docs/Development.md) for details.
-
 ## Setup
 ### Requirements:
-- **NodeJS** - JavaScript Runtime Environment
-- **npm** - package manager for Node
-- **pnpm** - a diskspace efficient alternative to npm
-- **nvm [Optional]** - Node Version Manager, to manage npm versions <br>
+- [**NodeJS**](https://nodejs.org/en) - version 20 or later.
+- **NPM** - package manager for NodeJS.
+- **pnpm** - a diskspace efficient alternative to NPM
+- **nvm [Optional]** - Node Version Manager, to manage NodeJS versions for [Windows](https://github.com/coreybutler/nvm-windows/) or [Linux/MacOS](https://github.com/nvm-sh/nvm)
 
-### Notes: 
-- If you do not have NVM and prefer to use it, Please Download `nvm-setup` and install it from [The NVM Github Repository](https://github.com/coreybutler/nvm-windows/releases)
-
-
-**Run CMD/Powershell/Git Bash as Administrator**  
 ```bash
 # Clone
 git clone https://github.com/abaza738/the-circassians.git
