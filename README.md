@@ -56,6 +56,8 @@ corepack enable # Enable pnpm, If disabled
 # Activate pnpm
 corepack prepare pnpm@latest --activate 
 
+## add @vueuse/motion
+pnpm add @vueuse/motion
 # Install dependencies:
 pnpm install
 
