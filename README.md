@@ -53,12 +53,12 @@ cd the-circassians
 
 # Enable pnpm, If disabled:
 corepack enable # Enable pnpm, If disabled
+
 # Activate pnpm
 corepack prepare pnpm@latest --activate 
 
-## add @vueuse/motion
-pnpm add @vueuse/motion
 # Install dependencies:
+# Also run this command whenever pulling changes that include changes in `package.json`
 pnpm install
 
 # Start the development server on `http://localhost:3000`:
