@@ -2,7 +2,7 @@
   <div class="page">
     <section class="container relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 px-4 md:px-8 mx-auto">
       <div class="absolute top-0 left-0 w-full h-full z-[0]">
-        <video class="h-full object-cover" autoplay loop muted>
+        <video class="h-full object-cover" autoplay loop muted playsinline>
           <source src="/video/hero.mp4" >
         </video>
       </div>
