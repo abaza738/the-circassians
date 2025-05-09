@@ -1,3 +1,5 @@
+
+
 <template>
   <div class="page">
     <section class="container relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 px-4 md:px-8 mx-auto">
@@ -9,7 +11,6 @@
 
       <!-- Overlay -->
       <div class="absolute top-0 left-0 w-full h-full z-[0] bg-night-50/90 dark:bg-night/90" />
-
       <NuxtImg
         v-motion
         :initial="{ opacity: 0, scale: 2 }"
@@ -48,7 +49,7 @@
         :duration="1000"
         :delay="1900"
         class="z-10"
-      >
+        >
         <p>For over a century, the Circassians resisted Russian conquest—until 1864, when war turned to genocide.
           <br>Hundreds of thousands were killed or exiled across the Black Sea, never to return.
           <br>This is their story—remembered, reclaimed, and finally told.
@@ -88,15 +89,38 @@
             <UiDisplayButton class="me-4">History</UiDisplayButton>
           </NuxtLink>
         </div>
+          <!-- <div>
+          <QuoteBox
+            quote='"their only crime was not being Russian."'
+            author="William Gifford Palgrave"
+            />
+          </div>
+          <div>
+          <QuoteBox
+            quote="The best way to predict the future is to invent it."
+            author="Alan Kay"
+            />
+          </div> -->
+           <div class="mt-6 ml-0 md:ml-4">
+        <QuoteBoxCarousel />
+      </div>
       </article>
+      <!-- QuoteBoxCarousel -->
+      <!-- <div class="mt-6 ml-0 md:ml-4">
+        <QuoteBoxCarousel />
+      </div> -->
     </section>
+    
   </div>
 </template>
 
 <script setup lang="ts">
+import QuoteBox from '@/components/Ui/QouteBox.vue'
+import QuoteBoxCarousel from '@/components/Ui/QouteBoxCarousel.vue';
 definePageMeta({
   name: 'home'
 })
+
 </script>
 
 <style scoped>
