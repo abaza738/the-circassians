@@ -44,18 +44,6 @@ const prevQuote = () => {
       :author="quotes.at(currentIndex)?.author"
     />
     <!-- Navigation Arrows -->
-    <!-- <button 
-      @click="prevQuote" 
-      class="absolute top-1/2 -left-5 transform -translate-y-1/2 bg-gray-400 rounded-full p-2 hover:bg-gray-500 z-20"
-    >
-      ⬅
-    </button>
-    <button 
-      @click="nextQuote" 
-      class="absolute top-1/2 -right-5 transform -translate-y-1/2 bg-gray-400 rounded-full p-2 hover:bg-gray-500 z-10"
-    >
-      ➡
-    </button> -->
         <div class="flex justify-center mt-4 gap-4">
       <button 
         @click="prevQuote" 
