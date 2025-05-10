@@ -75,6 +75,26 @@ h4 {
   @apply flex-1 flex flex-col px-4;
 }
 
+.container {
+  width: 100%;
+
+  @media (width >= 40rem /* 640px */) {
+    max-width: 40rem /* 640px */;
+  }
+  @media (width >= 48rem /* 768px */) {
+    max-width: 44rem;
+  }
+  @media (width >= 64rem /* 1024px */) {
+    max-width: 60rem;
+  }
+  @media (width >= 80rem /* 1280px */) {
+    max-width: 68rm;
+  }
+  @media (width >= 96rem /* 1536px */) {
+    max-width: 84rm;
+  }
+}
+
 @keyframes hover {
   0% {
     transform: translateY(0);
