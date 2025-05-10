@@ -1,5 +1,5 @@
 <template>
-  <button class="cta py-4 px-10 rounded transition-all duration-300 text-sm font-bold tracking-widest uppercase outline-none border-none">
+  <button class="cta py-4 px-10 rounded-md transition-all duration-300 text-sm font-bold tracking-widest uppercase outline-none border-none cursor-pointer">
     <slot />
   </button>
 </template>
@@ -14,7 +14,7 @@ button.cta {
   border: 2px solid rgba(var(--button-color), 0.10);
   border-right: 2px solid rgba(var(--button-color), 0.20);
   border-bottom: 2px solid rgba(var(--button-color), 0.20);
-  
+
   &:hover {
     background-color: rgba(var(--button-color), 0.08);
     border-top: 2px solid rgba(var(--button-color), 0.20);

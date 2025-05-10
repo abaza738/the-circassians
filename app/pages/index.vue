@@ -1,3 +1,30 @@
+<script setup lang="ts">
+import QuoteBoxCarousel from '~/components/QuoteBoxCarousel.vue'
+
+definePageMeta({
+  name: 'home',
+})
+
+const quotes = ref([])
+
+async function loadQuotes() {
+  try {
+    const response = await fetch('/homepage_quotes.json')
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
+    const data = await response.json()
+    quotes.value = data
+  }
+  catch (error) {
+    console.error('Failed to load quotes:', error)
+  }
+}
+
+onMounted(() => {
+  loadQuotes()
+})
+</script>
 
 <template>
   <div class="page">
@@ -15,8 +42,9 @@
         :initial="{ opacity: 0, scale: 2 }"
         :enter="{ opacity: 1, y: 0, scale: 1 }"
         :duration="2000"
+        :preload="true"
         src="/images/full-circassian-flag.svg"
-        class="w-auto h-[70px] sm:h-[100px] rounded z-10"
+        class="w-auto h-[70px] sm:h-[100px] rounded-md z-10"
       />
 
       <h1
@@ -66,7 +94,9 @@
               :delay="2200"
               :to="{ name: 'who' }"
             >
-              <UiDisplayButton class="me-4">Who We Are</UiDisplayButton>
+              <DisplayButton class="me-4">
+                Who We Are
+              </DisplayButton>
             </NuxtLink>
 
             <NuxtLink
@@ -77,7 +107,9 @@
               :delay="2400"
               :to="{ name: 'where' }"
             >
-              <UiDisplayButton class="me-4">Where We Are Now</UiDisplayButton>
+              <DisplayButton class="me-4">
+                Where We Are Now
+              </DisplayButton>
             </NuxtLink>
 
             <NuxtLink
@@ -88,7 +120,9 @@
               :delay="2600"
               :to="{ name: 'history' }"
             >
-              <UiDisplayButton class="me-4">History</UiDisplayButton>
+              <DisplayButton class="me-4">
+                History
+              </DisplayButton>
             </NuxtLink>
           </div>
         </article>
@@ -104,38 +138,11 @@
         >
           <!-- <QuoteBoxCarousel /> -->
           <QuoteBoxCarousel :quotes="quotes" />
-
         </div>
       </div>
     </section>
   </div>
 </template>
-
-<script setup lang="ts">
-import QuoteBoxCarousel from '~/components/Ui/QuoteBoxCarousel.vue'
-definePageMeta({
-  name: 'home'
-})
-
-const quotes = ref([])
-
-const loadQuotes = async () => {
-  try {
-    const response = await fetch('/homepage_quotes.json')
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`)
-    }
-    const data = await response.json()
-    quotes.value = data
-  } catch (error) {
-    console.error('Failed to load quotes:', error)
-  }
-}
-
-onMounted(() => {
-  loadQuotes()
-})
-</script>
 
 <style scoped>
 .hover {

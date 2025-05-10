@@ -1,4 +1,51 @@
 @import url(./transitions.css);
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme static {
+  --color-night-50: #f4f9f8;
+  --color-night-100: #d9eeea;
+  --color-night-200: #b2ddd6;
+  --color-night-300: #84c4bb;
+  --color-night-400: #5aa79f;
+  --color-night-500: #418b85;
+  --color-night-600: #326f6b;
+  --color-night-700: #2b5a57;
+  --color-night-800: #264948;
+  --color-night-900: #233e3d;
+  --color-night-950: #081212;
+  --color-night: #081212;
+
+  --color-primary-50: #eefce9;
+  --color-primary-100: #daf8cf;
+  --color-primary-200: #b8f1a5;
+  --color-primary-300: #8ae670;
+  --color-primary-400: #63d645;
+  --color-primary-500: #43bc26;
+  --color-primary-600: #30961a;
+  --color-primary-700: #246b17;
+  --color-primary-800: #235b19;
+  --color-primary-900: #214d1a;
+  --color-primary-950: #0c2a09;
+  --color-primary: #246b17;
+
+  --color-accent-50: #fdfee8;
+  --color-accent-100: #fafec3;
+  --color-accent-200: #fbfe8a;
+  --color-accent-300: #fdfb3b;
+  --color-accent-400: #faee15;
+  --color-accent-500: #ead508;
+  --color-accent-600: #caa804;
+  --color-accent-700: #a17907;
+  --color-accent-800: #855f0e;
+  --color-accent-900: #714d12;
+  --color-accent-950: #422906;
+  --color-accent: #fdfb3b;
+
+  --font-heading: 'Playfair Display';
+}
 
 body {
   font-family: 'Manrope', serif;
@@ -20,12 +67,12 @@ h1,
 h2,
 h3,
 h4 {
-  @apply font-heading;
-  line-height: 1.1;
+  font-family: var(--font-heading);
+  line-height: 1.1 !important;
 }
 
 .page {
-  @apply flex-1 flex flex-col;
+  @apply flex-1 flex flex-col px-4;
 }
 
 @keyframes hover {
