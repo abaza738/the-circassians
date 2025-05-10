@@ -7,7 +7,7 @@
         <em>{{ quote || "No quote available" }}</em>
       </p>
     </div>
-    <footer class="pb-2">
+    <footer class="pb-2 mt-4">
       <div class="text-gray-500 text-sm font-semibold">~ {{ author || "Unknown Author" }}</div>
     </footer>
   </blockquote>
