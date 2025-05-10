@@ -28,7 +28,7 @@ onMounted(() => {
 
 <template>
   <div class="page">
-    <section class="container relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 px-4 md:px-8 mx-auto">
+    <section class="container relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 p-4 md:p-8 mx-auto">
       <div class="absolute top-0 left-0 w-full h-full z-[0]">
         <video class="h-full object-cover" autoplay loop muted playsinline>
           <source src="/video/hero.mp4">
@@ -92,9 +92,9 @@ onMounted(() => {
               :enter="{ opacity: 1 }"
               :duration="1000"
               :delay="2200"
-              :to="{ name: 'who' }"
+              :to="{ path: '/about' }"
             >
-              <DisplayButton class="me-4">
+              <DisplayButton class="mb-4 me-4">
                 Who We Are
               </DisplayButton>
             </NuxtLink>
@@ -105,9 +105,9 @@ onMounted(() => {
               :enter="{ opacity: 1 }"
               :duration="1000"
               :delay="2400"
-              :to="{ name: 'where' }"
+              :to="{ path: '/diaspora' }"
             >
-              <DisplayButton class="me-4">
+              <DisplayButton class="mb-4 me-4">
                 Where We Are Now
               </DisplayButton>
             </NuxtLink>
@@ -118,9 +118,9 @@ onMounted(() => {
               :enter="{ opacity: 1 }"
               :duration="1000"
               :delay="2600"
-              :to="{ name: 'history' }"
+              :to="{ path: '/history' }"
             >
-              <DisplayButton class="me-4">
+              <DisplayButton class="mb-4 me-4">
                 History
               </DisplayButton>
             </NuxtLink>
@@ -134,7 +134,7 @@ onMounted(() => {
           :enter="{ opacity: 1, x: 0 }"
           :duration="1000"
           :delay="2200"
-          class="md:w-1/3 flex justify-center items-start"
+          class="w-full mx-auto md:w-1/3 flex justify-center items-start"
         >
           <!-- <QuoteBoxCarousel /> -->
           <QuoteBoxCarousel :quotes="quotes" />
