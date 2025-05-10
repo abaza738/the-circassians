@@ -1,8 +1,6 @@
 name: Deploy to NuxtHub
 on:
   push:
-    branches:
-      - main
     tags:
       - '*'
 
