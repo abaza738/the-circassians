@@ -1,35 +1,30 @@
 
 <script setup lang="ts">
-import { ref, watch, onMounted } from 'vue';
-import QuoteBox from '~/components/Ui/QuoteBox.vue';
+import QuoteBox from '~/components/Ui/QuoteBox.vue'
 
-// Props
 const props = defineProps<{
-  quotes: { quote: string; author: string }[];
-}>();
+  quotes: { quote: string; author: string }[]
+}>()
 
-// Reactive index
 const currentIndex = ref(0);
 
-// Watch for changes in quotes to reset index
 watch(
   () => props.quotes,
   (newQuotes) => {
     if (newQuotes.length > 0) {
-      currentIndex.value = 0;
+      currentIndex.value = 0
     }
   }
-);
+)
 
-// Handlers for navigation
 const nextQuote = () => {
-  currentIndex.value = (currentIndex.value + 1) % props.quotes.length;
-};
+  currentIndex.value = (currentIndex.value + 1) % props.quotes.length
+}
 
 const prevQuote = () => {
   currentIndex.value =
-    (currentIndex.value - 1 + props.quotes.length) % props.quotes.length;
-};
+    (currentIndex.value - 1 + props.quotes.length) % props.quotes.length
+}
 </script>
 
 

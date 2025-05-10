@@ -4,26 +4,20 @@
     <span class="icon-[tabler--quote] text-gray-300 absolute -left-2 -top-2 size-4 rotate-180 rtl:rotate-0"></span>
     <div class="relative z-10">
       <p class="text-gray-800 text-sm">
-        <em>{{ quote || "No quote available" }}</em>
+        <em>{{ quote }}</em>
       </p>
     </div>
     <footer class="pb-2 mt-4">
-      <div class="text-gray-500 text-sm font-semibold">~ {{ author || "Unknown Author" }}</div>
+      <div class="text-gray-500 text-sm font-semibold">~ {{ author }}</div>
     </footer>
   </blockquote>
 </template>
 
 <script setup>
-defineProps({
-  quote: {
-    type: String,
-    default: " ",
-  },
-  author: {
-    type: String,
-    default: " ",
-  },
-});
+defineProps<{
+  quote?: string,
+  author?: string,
+}>()
 </script>
 
 <style scoped>

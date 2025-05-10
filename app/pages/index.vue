@@ -112,42 +112,33 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
-import QuoteBox from '~/components/Ui/QuoteBox.vue'
-import QuoteBoxCarousel from '~/components/Ui/QuoteBoxCarousel.vue';
+import QuoteBoxCarousel from '~/components/Ui/QuoteBoxCarousel.vue'
 definePageMeta({
   name: 'home'
 })
 
+const quotes = ref([])
 
-// Define reactive quotes
-const quotes = ref([]);
-
-// Fetch quotes from homepage_quotes JSON
 const loadQuotes = async () => {
   try {
-    const response = await fetch('/homepage_quotes.json');
+    const response = await fetch('/homepage_quotes.json')
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      throw new Error(`HTTP error! status: ${response.status}`)
     }
-    const data = await response.json();
-    quotes.value = data;
+    const data = await response.json()
+    quotes.value = data
   } catch (error) {
-    console.error('Failed to load quotes:', error);
+    console.error('Failed to load quotes:', error)
   }
-};
+}
 
-// Fetch on component mount
 onMounted(() => {
-  loadQuotes();
-});
+  loadQuotes()
+})
 </script>
 
 <style scoped>
 .hover {
   animation: hover 2s ease-in-out infinite;
 }
-
-
-
 </style>
