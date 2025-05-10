@@ -17,7 +17,7 @@
 defineProps({
   quote: {
     type: String,
-    default: "Insert a meaningful quote here.",
+    default: " ",
   },
   author: {
     type: String,
