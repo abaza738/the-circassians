@@ -102,7 +102,9 @@
           :delay="2200"
           class="md:w-1/3 flex justify-center items-start"
         >
-          <QuoteBoxCarousel />
+          <!-- <QuoteBoxCarousel /> -->
+          <QuoteBoxCarousel :quotes="quotes" />
+
         </div>
       </div>
     </section>
@@ -110,16 +112,42 @@
 </template>
 
 <script setup lang="ts">
-import QuoteBox from '@/components/Ui/QouteBox.vue'
-import QuoteBoxCarousel from '@/components/Ui/QouteBoxCarousel.vue';
+import { ref, onMounted } from 'vue';
+import QuoteBox from '~/components/Ui/QuoteBox.vue'
+import QuoteBoxCarousel from '~/components/Ui/QuoteBoxCarousel.vue';
 definePageMeta({
   name: 'home'
 })
 
+
+// Define reactive quotes
+const quotes = ref([]);
+
+// Fetch quotes from homepage_quotes JSON
+const loadQuotes = async () => {
+  try {
+    const response = await fetch('/homepage_quotes.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    quotes.value = data;
+  } catch (error) {
+    console.error('Failed to load quotes:', error);
+  }
+};
+
+// Fetch on component mount
+onMounted(() => {
+  loadQuotes();
+});
 </script>
 
 <style scoped>
 .hover {
   animation: hover 2s ease-in-out infinite;
 }
+
+
+
 </style>
