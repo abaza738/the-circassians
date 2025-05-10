@@ -21,7 +21,7 @@ defineProps({
   },
   author: {
     type: String,
-    default: "Anonymous",
+    default: " ",
   },
 });
 </script>
