@@ -16,14 +16,7 @@ export default defineNuxtConfig({
   },
   css: ['assets/main.css'],
 
-  modules: [
-    '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxtjs/i18n',
-    '@nuxt/ui',
-
-    '@vueuse/motion/nuxt',
-  ],
+  modules: ['@nuxt/icon', '@nuxt/image', '@nuxtjs/i18n', '@nuxt/ui', '@vueuse/motion/nuxt', '@nuxtjs/seo'],
 
   // Modules options
   colorMode: {
@@ -45,6 +38,10 @@ export default defineNuxtConfig({
       // { code: 'fr', name: 'Français', file: 'fr.ts' },
       // { code: 'tr', name: 'Türkçe', file: 'tr.ts' },
     ],
+  },
+  ogImage: {
+    fonts: ['Playfair Display', 'Manrope'],
+    googleFontMirror: true,
   },
   ui: {
     theme: {
