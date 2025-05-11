@@ -4,6 +4,13 @@ definePageMeta({
   name: 'about',
   title: 'About Circassians',
 })
+
+const i18n = useI18n()
+
+defineOgImageComponent('Default', {
+  title: i18n.t('about.title'),
+  description: i18n.t('about.introduction.title'),
+})
 </script>
 
 <template>

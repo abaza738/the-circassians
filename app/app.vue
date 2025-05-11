@@ -1,6 +1,16 @@
 <script setup lang="ts">
 const i18n = useI18n()
 
+defineOgImageComponent('Default', {
+  title: i18n.t('title'),
+})
+
+useSeoMeta({
+  ogSiteName: i18n.t('title'),
+  ogDescription: i18n.t('description'),
+  ogType: 'website',
+})
+
 useHead({
   title: () => i18n.t('title'),
   bodyAttrs: {

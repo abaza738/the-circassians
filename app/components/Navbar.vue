@@ -9,7 +9,7 @@ function toggleDarkMode() {
 <template>
   <nav class="sticky top-0 w-full text-sm text-accent-50 border-b-2 border-accent bg-primary-800/80 backdrop-blur-md z-20">
     <ul class="flex items-center gap-6 container mx-auto p-4 md:px-0">
-      <NuxtLink to="/">
+      <NuxtLink to="/" aria-label="home-page">
         <img src="/images/adiga.svg" alt="adiga flag" class="h-[2rem]">
       </NuxtLink>
       <li class="hidden sm:block">

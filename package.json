@@ -18,6 +18,7 @@
     "@nuxt/image": "1.10.0",
     "@nuxt/ui": "^3.1.1",
     "@nuxtjs/i18n": "9.5.3",
+    "@nuxtjs/seo": "3.0.3",
     "@vueuse/motion": "^3.0.3",
     "nuxt": "^3.17.2",
     "vue": "^3.5.13",

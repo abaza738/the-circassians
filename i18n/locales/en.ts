@@ -1,7 +1,8 @@
 export default {
   title: 'The Circassian Genocide',
+  description: 'Discover the history of the largest and most deadly forgotten genocide of the 19th century.',
   about: {
-    title: 'The Circassians: An Overview',
+    title: 'Meet The Circassians',
     introduction: {
       title: 'Introduction: Unveiling the Story of the Circassians',
       text: 'The tapestry of global cultures is woven with countless threads, each representing the unique history and heritage of a distinct people. Among these threads are the Circassians, an ancient nation from the North Caucasus whose story, though rich and profound, remains largely unknown to many across the world. Their ancestral homeland, nestled in the strategic region between the Black Sea and the Caspian Sea, bore witness to a vibrant civilization for millennia. Today, the descendants of these people are scattered across the globe, carrying with them the echoes of a powerful past and the enduring spirit of their culture. This page serves as a central resource, inviting individuals from all backgrounds to embark on a journey of discovery into the world of the Circassians, to understand their origins, their traditions, and the significant historical events that have shaped their destiny. For those encountering the name "Circassian" for the first time, this exploration offers an opportunity to learn about a unique culture and a pivotal historical experience that continues to resonate within communities worldwide.',
