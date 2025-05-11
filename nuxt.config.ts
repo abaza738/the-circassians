@@ -16,7 +16,15 @@ export default defineNuxtConfig({
   },
   css: ['assets/main.css'],
 
-  modules: ['@nuxt/icon', '@nuxt/image', '@nuxtjs/i18n', '@nuxt/ui', '@vueuse/motion/nuxt', '@nuxtjs/seo'],
+  modules: [
+    '@nuxt/icon',
+    '@nuxt/image',
+    '@nuxtjs/i18n',
+    '@nuxt/ui',
+    '@vueuse/motion/nuxt',
+    '@nuxtjs/seo',
+    '@vueuse/nuxt',
+  ],
 
   // Modules options
   colorMode: {
