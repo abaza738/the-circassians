@@ -1,6 +1,8 @@
 name: Deploy to NuxtHub
 on:
   push:
+    branches: 
+      - main
     tags:
       - '*'
 
@@ -9,7 +11,7 @@ jobs:
     name: Deploy to NuxtHub
     runs-on: ubuntu-latest
     environment:
-      name: ${{ github.ref == 'refs/heads/main' && 'production' || 'preview' }}
+      name: ${{ github.ref_type == 'tag' && 'production' || 'preview' }}
       url: ${{ steps.deploy.outputs.deployment-url }}
     permissions:
       contents: read
