@@ -1,9 +1,18 @@
 <script setup lang="ts">
 definePageMeta({
+    layout: 'inner',
   title: 'Where We Are Now',
-  name: 'where',
+  name: 'diaspora',
+})
+
+const i18n = useI18n()
+defineOgImageComponent('Default', {
+  title: i18n.t('diaspora.title'),
+  description: i18n.t('diaspora.introduction.title'),
 })
 </script>
+
+
 
 <template>
   <div class="page">
