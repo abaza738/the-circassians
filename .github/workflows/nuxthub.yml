@@ -11,7 +11,7 @@ jobs:
     name: Deploy to NuxtHub
     runs-on: ubuntu-latest
     environment:
-      name: ${{ github.ref_type == 'tag' && 'production' || 'preview' }}
+      name: production
       url: ${{ steps.deploy.outputs.deployment-url }}
     permissions:
       contents: read
