@@ -16,6 +16,16 @@ export default defineNuxtConfig({
   },
   css: ['assets/main.css'],
 
+  runtimeConfig: {
+    public: {
+      scripts: {
+        googleTagManager: {
+          id: '',
+        },
+      },
+    },
+  },
+
   modules: [
     '@nuxt/icon',
     '@nuxt/image',
@@ -24,6 +34,7 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     '@nuxtjs/seo',
     '@vueuse/nuxt',
+    '@nuxt/scripts',
   ],
 
   // Modules options
@@ -50,6 +61,11 @@ export default defineNuxtConfig({
   ogImage: {
     fonts: ['Playfair Display', 'Manrope'],
     googleFontMirror: true,
+  },
+  scripts: {
+    registry: {
+      googleTagManager: true,
+    },
   },
   ui: {
     theme: {

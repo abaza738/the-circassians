@@ -16,9 +16,11 @@
   "dependencies": {
     "@nuxt/icon": "1.12.0",
     "@nuxt/image": "1.10.0",
+    "@nuxt/scripts": "0.11.6",
     "@nuxt/ui": "^3.1.1",
     "@nuxtjs/i18n": "9.5.3",
     "@nuxtjs/seo": "3.0.3",
+    "@unhead/vue": "^2.0.3",
     "@vueuse/motion": "^3.0.3",
     "@vueuse/nuxt": "13.1.0",
     "nuxt": "^3.17.2",
