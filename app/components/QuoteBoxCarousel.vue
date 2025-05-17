@@ -26,6 +26,7 @@ function prevQuote() {
     <button
       class="carousel-button prev"
       type="button"
+      aria-label="Previous quote"
       @click="prevQuote"
     >
       <UIcon name="i-solar-alt-arrow-left-outline" />
@@ -34,6 +35,7 @@ function prevQuote() {
     <button 
       class="carousel-button next"
       type="button"
+      aria-label="Next quote"
       @click="nextQuote"
     >
       <UIcon name="i-solar-alt-arrow-right-outline" />

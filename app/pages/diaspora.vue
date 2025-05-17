@@ -25,14 +25,12 @@ useSeoMeta({
 <template>
   <div class="page">
     <div class="container flex-1 flex flex-col py-8 mx-auto">
-      <div class="flex gap-4 mb-4 mt-6 ">
-        <figure class="flex flex-col items-center justify-center gap-2">
-          <img src="/images/maps/genoicde_routes_1.jpg" alt="Circassian Exile Migration Paths" class="w-4/5 rounded-lg shadow-md mx-auto">
-          <figcaption class="text-center text-sm text-gray-600">
-            {{ $t('diaspora.figure_1_caption') }}
-          </figcaption>
-        </figure>
-      </div>
+      <figure class="flex flex-col items-center justify-center gap-2 mb-4">
+        <img src="/images/maps/genoicde_routes_1.jpg" alt="Circassian Exile Migration Paths" class="w-4/5 rounded-lg shadow-md mx-auto">
+        <figcaption class="text-center text-sm text-gray-600">
+          {{ $t('diaspora.figure_1_caption') }}
+        </figcaption>
+      </figure>
       <h1 class="text-center text-4xl sm:text-[4rem] font-bold">
         {{ $t('diaspora.title') }}
       </h1>
@@ -55,14 +53,12 @@ useSeoMeta({
 
       <!-- The Diaspora Experience -->
       <SectionHeaderNoImage :title="$t('diaspora.exile.title')" />
-      <div class="flex flex-col justify-center items-center gap-4 mb-4 mt-6">
-        <figure class="flex flex-col items-center justify-center gap-2">
-          <img src="/images/maps/ethnic-map-of-circassians-in-the-18th-century-compared-to-21st-century.webp" alt="Circassian Population Distribution" class="w-4/5  rounded-lg shadow-md mx-auto">
-          <figcaption class="text-center text-sm text-gray-600">
-            {{ $t('diaspora.figure_2_caption') }}
-          </figcaption>
-        </figure>
-      </div>
+      <figure class="flex flex-col items-center justify-center gap-2 mb-4 mt-8">
+        <img src="/images/maps/ethnic-map-of-circassians-in-the-18th-century-compared-to-21st-century.webp" alt="Circassian Population Distribution" class="w-4/5  rounded-lg shadow-md mx-auto">
+        <figcaption class="text-center text-sm text-gray-600">
+          {{ $t('diaspora.figure_2_caption') }}
+        </figcaption>
+      </figure>
       <p class="text-lg mt-2 mb-2">
         {{ $t('diaspora.exile.text1') }}
       </p>
@@ -77,6 +73,12 @@ useSeoMeta({
 
       <!-- Modern Diaspora Dynamics -->
       <SectionHeaderNoImage :title="$t('diaspora.today.title')" />
+      <figure class="flex flex-col items-center justify-center gap-2 mb-4 mt-8">
+        <img src="/images/maps/circassians-and-abazins-in-the-middle-east.png" alt="Circassians and Abazins in the Middle East" class="w-4/5  rounded-lg shadow-md mx-auto">
+        <figcaption class="text-center text-sm text-gray-600">
+          {{ $t('diaspora.figure_3_caption') }}
+        </figcaption>
+      </figure>
       <p class="text-lg mt-2 mb-2">
         {{ $t('diaspora.today.text1') }}
       </p>

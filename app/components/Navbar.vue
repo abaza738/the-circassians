@@ -8,38 +8,51 @@ function toggleDarkMode() {
 
 <template>
   <nav class="sticky top-0 w-full text-sm text-accent-50 border-b-2 border-accent bg-primary-800/80 backdrop-blur-md z-20">
-    <ul class="flex items-center gap-6 container mx-auto p-4 md:px-0">
-      <NuxtLink to="/" aria-label="home-page">
-        <img src="/images/adiga.svg" alt="adiga flag" class="h-[2rem]">
+    <div class="container grid grid-cols-[auto_1fr_auto] items-center mx-auto gap-6 p-4 md:px-0">
+      <NuxtLink to="/" aria-label="home-page" class="me-auto">
+        <img src="/images/adiga.svg" alt="circassian-flag" class="h-[2rem]">
       </NuxtLink>
-      <li class="hidden sm:block">
-        <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/about' }">
-          About
-        </NuxtLink>
-      </li>
-      <li class="hidden sm:block">
-        <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/history' }">
-          History
-        </NuxtLink>
-      </li>
-      <li class="hidden sm:block">
-        <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/diaspora' }">
-          Diaspora
-        </NuxtLink>
-      </li>
 
-      <div class="flex-1" />
+      <ul class="hidden sm:flex items-center justify-center gap-8">
+        <li>
+          <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/about' }">
+            {{ $t('navbar.about') }}
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/diaspora' }">
+            {{ $t('navbar.diaspora') }}
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/history' }">
+            {{ $t('navbar.history') }}
+          </NuxtLink>
+        </li>
+      </ul>
 
-      <!-- <LangSelect /> -->
-
-      <!-- <span class="border-l border-white/50 h-[1rem]" /> -->
-
-      <div class="cursor-pointer text-lg leading-none" @click="toggleDarkMode">
-        <Transition mode="out-in">
-          <Icon v-if="colorMode.value === 'dark'" name="solar:sun-2-bold" title="Switch to Light mode" />
-          <Icon v-else name="solar:moon-outline" title="Switch to Dark mode" />
-        </Transition>
+      <!-- Wrapper for end controls -->
+      <div id="end-controls" class="flex items-center justify-end gap-6 ms-auto">
+        <!-- <LangSelect /> -->
+  
+        <!-- <span class="border-l border-white/50 h-[1rem]" /> -->
+        <div class="cursor-pointer text-lg leading-none" @click="toggleDarkMode">
+          <Transition mode="out-in">
+            <Icon
+              v-if="colorMode.value === 'dark'"
+              name="solar:sun-2-bold"
+              title="Switch to Light mode"
+              aria-label="Switch to Light mode"
+            />
+            <Icon
+              v-else
+              name="solar:moon-outline"
+              title="Switch to Dark mode"
+              aria-label="Switch to Dark mode"
+            />
+          </Transition>
+        </div>
       </div>
-    </ul>
+    </div>
   </nav>
 </template>

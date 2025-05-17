@@ -34,7 +34,7 @@ onMounted(() => {
   <div class="page">
     <section class="relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 p-4 md:p-8">
       <div class="absolute top-0 left-0 w-full h-full z-[0]">
-        <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+        <video class="w-full h-full object-cover" autoplay loop muted playsinline preload="auto">
           <source src="/video/hero.mp4">
         </video>
       </div>
@@ -47,9 +47,10 @@ onMounted(() => {
           v-motion
           :initial="{ opacity: 0, scale: 2 }"
           :enter="{ opacity: 1, y: 0, scale: 1 }"
-          :duration="2000"
+          :duration="1000"
           :preload="true"
           src="/images/full-circassian-flag.svg"
+          alt="The Circassian Flag"
           class="w-auto h-[70px] sm:h-[100px] rounded-md z-10"
         />
 
@@ -58,7 +59,7 @@ onMounted(() => {
           :initial="{ opacity: 0, y: 50 }"
           :enter="{ opacity: 1, y: 0 }"
           :duration="1000"
-          :delay="1300"
+          :delay="300"
           class="text-4xl sm:text-5xl lg:text-6xl z-10"
         >
           {{ $t('title') }}
@@ -66,29 +67,54 @@ onMounted(() => {
 
         <div class="flex flex-col md:flex-row gap-8 items-start w-full">
           <!-- Main Content -->
-          <article
-            v-motion
-            :initial="{ opacity: 0, y: 50 }"
-            :enter="{ opacity: 1, y: 0 }"
-            :duration="1000"
-            :delay="1900"
-            class="z-10 md:w-2/3"
-          >
-            <h3
+          <article class="z-10 md:w-2/3">
+            <h2
               v-motion
               :initial="{ opacity: 0, y: 50 }"
               :enter="{ opacity: 1, y: 0 }"
               :duration="1000"
-              :delay="1600"
+              :delay="600"
               class="text-2xl sm:text-4xl z-10"
             >
               Nation <span class="font-bold">Erased</span> — People <span class="font-bold">Live</span>
-            </h3>
+            </h2>
 
-            <p class="mt-4">
-              For over a century, the Circassians resisted Russian conquest—until 1864, when war turned to genocide.
-              <br>Hundreds of thousands were killed or exiled across the Black Sea, never to return.
-              <br>This is their story—remembered, reclaimed, and finally told.
+            <p
+              v-motion
+              :initial="{ opacity: 0, y: 50 }"
+              :enter="{ opacity: 1, y: 0 }"
+              :duration="1000"
+              :delay="900"
+              class="mt-4"
+            >
+              {{ $t('home.text1') }}
+            </p>
+            <p
+              v-motion
+              :initial="{ opacity: 0, y: 50 }"
+              :enter="{ opacity: 1, y: 0 }"
+              :duration="1000"
+              :delay="1100"
+            >
+              {{ $t('home.text2') }}
+            </p>
+            <p
+              v-motion
+              :initial="{ opacity: 0, y: 50 }"
+              :enter="{ opacity: 1, y: 0 }"
+              :duration="1000"
+              :delay="1400"
+            >
+              {{ $t('home.text3') }}
+            </p>
+            <p
+              v-motion
+              :initial="{ opacity: 0, y: 50 }"
+              :enter="{ opacity: 1, y: 0 }"
+              :duration="1000"
+              :delay="1700"
+            >
+              {{ $t('home.text4') }}
             </p>
 
             <div class="mt-8">
@@ -97,11 +123,11 @@ onMounted(() => {
                 :initial="{ opacity: 0 }"
                 :enter="{ opacity: 1 }"
                 :duration="1000"
-                :delay="2200"
+                :delay="2000"
                 :to="{ path: '/about' }"
               >
                 <DisplayButton class="mb-4 me-4">
-                  Who We Are
+                  {{ $t('home.who_we_are') }}
                 </DisplayButton>
               </NuxtLink>
 
@@ -110,11 +136,11 @@ onMounted(() => {
                 :initial="{ opacity: 0 }"
                 :enter="{ opacity: 1 }"
                 :duration="1000"
-                :delay="2400"
+                :delay="2300"
                 :to="{ path: '/diaspora' }"
               >
                 <DisplayButton class="mb-4 me-4">
-                  Where We Are Now
+                  {{ $t('home.where_we_are_now') }}
                 </DisplayButton>
               </NuxtLink>
 
@@ -127,7 +153,7 @@ onMounted(() => {
                 :to="{ path: '/history' }"
               >
                 <DisplayButton class="mb-4 me-4">
-                  History
+                  {{ $t('home.history') }}
                 </DisplayButton>
               </NuxtLink>
             </div>
@@ -139,7 +165,7 @@ onMounted(() => {
             :initial="{ opacity: 0, x: 50 }"
             :enter="{ opacity: 1, x: 0 }"
             :duration="1000"
-            :delay="2200"
+            :delay="2600"
             class="w-full mx-auto md:w-1/3 flex justify-center items-start"
           >
             <!-- <QuoteBoxCarousel /> -->
