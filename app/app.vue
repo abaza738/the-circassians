@@ -6,9 +6,13 @@ defineOgImageComponent('Default', {
 })
 
 useSeoMeta({
-  ogSiteName: i18n.t('title'),
-  ogDescription: i18n.t('description'),
+  title: i18n.t('title'),
+  description: i18n.t('description'),
+
   ogType: 'website',
+  ogSiteName: i18n.t('title'),
+  ogTitle: i18n.t('title'),
+  ogDescription: i18n.t('description'),
 })
 
 useHead({

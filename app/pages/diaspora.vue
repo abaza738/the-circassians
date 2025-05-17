@@ -1,11 +1,15 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'inner',
-  title: 'The Circassian Diaspora',
   name: 'diaspora',
 })
 
 const i18n = useI18n()
+
+useHead({
+  titleTemplate: title => `${title} | ${i18n.t('diaspora.title')}`,
+})
+
 defineOgImageComponent('Default', {
   title: i18n.t('diaspora.title'),
   description: i18n.t('diaspora.introduction.title'),

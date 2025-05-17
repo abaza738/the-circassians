@@ -2,10 +2,13 @@
 definePageMeta({
   layout: 'inner',
   name: 'about',
-  title: 'About Circassians',
 })
 
 const i18n = useI18n()
+
+useHead({
+  titleTemplate: title => `${title} | ${i18n.t('about.title')}`,
+})
 
 defineOgImageComponent('Default', {
   title: i18n.t('about.title'),

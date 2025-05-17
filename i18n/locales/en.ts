@@ -50,9 +50,7 @@ export default {
       text2: 'We invite you to further explore the resources available on this website to delve deeper into specific aspects of Circassian history, culture, and the ongoing efforts to preserve their identity. By learning more and engaging with this story, you contribute to raising awareness and fostering a greater appreciation for the rich tapestry of human experiences that shape our world.',
     },
   },
-  // About Page
 
-  // Diaspora Page
   // Diaspora Page
   diaspora: {
     title: 'The Circassian Diaspora: Genocide, Exile and Return ',
@@ -87,10 +85,9 @@ export default {
       text3: 'The idea of "national belonging" allows Circassians to link the past to the present and produce future prospects. Circassian identity elements are affected by not residing in their homeland, with challenges like assimilation and language loss potentially making these factors less effective over time. However, national unity, based on common identity, ancient civilization, common history, and emotional solidarity, supports Circassian solidarity. The Circassian nation remains despite being torn apart, having managed to survive genocide.',
     },
   },
-  // Diaspora Page
 
   // Historical Timeline Page
-  historicalTimeline: {
+  history: {
     title: 'History: Timeline of the Circassian Genocide',
     introduction: {
       title: 'The Circassians: An Ancient Nation',
@@ -133,5 +130,4 @@ export default {
       text3: 'Recognition of the genocide, unifying Circassian territories, and the return of the diaspora are main issues on the Circassian movements agenda. Different figures have differing opinions on how to implement these proposals. Documents and facts available need to be presented and published in multiple languages to expose the reality of the genocide and deportation.',
     },
   },
-  // Historical Timeline Page
 }
