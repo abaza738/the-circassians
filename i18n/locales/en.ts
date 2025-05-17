@@ -133,5 +133,5 @@ export default {
       text3: 'Recognition of the genocide, unifying Circassian territories, and the return of the diaspora are main issues on the Circassian movements agenda. Different figures have differing opinions on how to implement these proposals. Documents and facts available need to be presented and published in multiple languages to expose the reality of the genocide and deportation.',
     },
   },
-    // Historical Timeline Page
+  // Historical Timeline Page
 }

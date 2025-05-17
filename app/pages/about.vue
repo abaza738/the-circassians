@@ -27,7 +27,7 @@ defineOgImageComponent('Default', {
         </h1>
       </SectionHeader>
 
-      <div class="w-full border-t border-night/10 dark:border-accent-50/25 my-8" />
+      <Divider class="my-4" />
 
       <SectionHeader
         class="h-[300px]"
@@ -44,7 +44,7 @@ defineOgImageComponent('Default', {
         <p>{{ $t('about.introduction.text') }}</p>
       </div>
 
-      <div class="w-full border-t border-night/10 dark:border-accent-50/25 my-8" />
+      <Divider class="my-4" />
 
       <SectionHeader
         class="h-[300px]"
@@ -61,7 +61,7 @@ defineOgImageComponent('Default', {
       <p>{{ $t('about.origins.text2') }}</p>
       <p>{{ $t('about.origins.text3') }}</p>
 
-      <div class="w-full border-t border-night/10 dark:border-accent-50/25 my-8" />
+      <Divider class="my-4" />
 
       <SectionHeader
         class="h-[300px]"
@@ -80,7 +80,7 @@ defineOgImageComponent('Default', {
       <p>{{ $t('about.languageAndCulture.text4') }}</p>
       <p>{{ $t('about.languageAndCulture.text5') }}</p>
 
-      <div class="w-full border-t border-night/10 dark:border-accent-50/25 my-8" />
+      <Divider class="my-4" />
 
       <SectionHeader
         class="h-[300px]"
@@ -98,7 +98,7 @@ defineOgImageComponent('Default', {
       <p>{{ $t('about.war.text3') }}</p>
       <p>{{ $t('about.war.text4') }}</p>
 
-      <div class="w-full border-t border-night/10 dark:border-accent-50/25 my-8" />
+      <Divider class="my-4" />
 
       <SectionHeader
         class="h-[300px]"
@@ -114,7 +114,7 @@ defineOgImageComponent('Default', {
       <p>{{ $t('about.diaspora.text1') }}</p>
       <p>{{ $t('about.diaspora.text2') }}</p>
 
-      <div class="w-full border-t border-night/10 dark:border-accent-50/25 my-8" />
+      <Divider class="my-4" />
 
       <SectionHeader
         class="h-[300px]"
@@ -129,7 +129,7 @@ defineOgImageComponent('Default', {
       <p>{{ $t('about.contributions.text1') }}</p>
       <p>{{ $t('about.contributions.text2') }}</p>
 
-      <div class="w-full border-t border-night/10 dark:border-accent-50/25 my-8" />
+      <Divider class="my-4" />
 
       <SectionHeader
         class="h-[300px]"
@@ -144,7 +144,7 @@ defineOgImageComponent('Default', {
       <p>{{ $t('about.preserving.text1') }}</p>
       <p>{{ $t('about.preserving.text2') }}</p>
 
-      <div class="w-full border-t border-night/10 dark:border-accent-50/25 my-8" />
+      <Divider class="my-4" />
 
       <SectionHeader
         class="h-[300px]"
