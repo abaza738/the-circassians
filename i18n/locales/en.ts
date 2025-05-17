@@ -54,6 +54,9 @@ export default {
   // Diaspora Page
   diaspora: {
     title: 'The Circassian Diaspora: Genocide, Exile and Return ',
+    description: 'After suffering acts of genocide and ethnic cleansing, Circassians continue to preserve their culture in diaspora in the hopes of reuniting again, one day, at their original homeland.',
+    figure_1_caption: 'Circassian Exile Migration Paths to the Ottoman Empire and the Balkans',
+    figure_2_caption: 'Circassian Population Distribution Before and After the Genocide',
     beginning: {
       title: 'The Heart of Circassia: Before the Genocide',
       text1: 'The Circassians are recognized historically as the indigenous people of Circassia, who lived in their homeland in the North-Caucasus for thousands of years. Before the Russian invasion, Circassia was a small independent nation. They endured high costs to preserve their identity and defend their homeland in the Caucasus. Circassian society was organized around strong community ties, vibrant cultural traditions, and a deep connection to their mountainous homeland. Their economy thrived on agriculture, craftsmanship, and trade, while their unique language and customs flourished, passed down through generations. Despite external pressures, Circassians maintained their autonomy and rich cultural legacy, defining themselves as resilient and fiercely independent.',

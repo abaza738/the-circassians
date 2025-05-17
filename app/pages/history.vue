@@ -13,6 +13,13 @@ useHead({
 defineOgImageComponent('Default', {
   title: i18n.t('history.title'),
 })
+
+useSeoMeta({
+  title: i18n.t('history.title'),
+  description: i18n.t('history.introduction.title'),
+  ogTitle: i18n.t('history.title'),
+  ogDescription: i18n.t('history.introduction.title'),
+})
 </script>
 
 <template>

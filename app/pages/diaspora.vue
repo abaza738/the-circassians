@@ -13,6 +13,13 @@ useHead({
 defineOgImageComponent('Default', {
   title: i18n.t('diaspora.title'),
 })
+
+useSeoMeta({
+  title: i18n.t('diaspora.title'),
+  description: i18n.t('diaspora.description'),
+  ogTitle: i18n.t('diaspora.title'),
+  ogDescription: i18n.t('diaspora.description'),
+})
 </script>
 
 <template>
@@ -22,7 +29,7 @@ defineOgImageComponent('Default', {
         <figure class="flex flex-col items-center justify-center gap-2">
           <img src="/images/maps/genoicde_routes_1.jpg" alt="Circassian Exile Migration Paths" class="w-4/5 rounded-lg shadow-md mx-auto">
           <figcaption class="text-center text-sm text-gray-600">
-            Circassian Exile Migration Paths to the Ottoman Empire and the Balkans
+            {{ $t('diaspora.figure_1_caption') }}
           </figcaption>
         </figure>
       </div>
@@ -52,7 +59,7 @@ defineOgImageComponent('Default', {
         <figure class="flex flex-col items-center justify-center gap-2">
           <img src="/images/maps/ethnic-map-of-circassians-in-the-18th-century-compared-to-21st-century.webp" alt="Circassian Population Distribution" class="w-4/5  rounded-lg shadow-md mx-auto">
           <figcaption class="text-center text-sm text-gray-600">
-            Circassian Population Distribution Before and After the Genocide
+            {{ $t('diaspora.figure_2_caption') }}
           </figcaption>
         </figure>
       </div>
