@@ -17,7 +17,7 @@ function prevQuote() {
 </script>
 
 <template>
-  <div class="relative rounded-lg px-4 shadow-md w-full">
+  <div class="relative rounded-lg px-4 w-full">
     <QuoteBox
       :quote="quotes.at(currentIndex)?.quote"
       :author="quotes.at(currentIndex)?.author"
