@@ -116,6 +116,15 @@ onMounted(() => {
             >
               {{ $t('home.text4') }}
             </p>
+            <p
+              v-motion
+              :initial="{ opacity: 0, y: 50 }"
+              :enter="{ opacity: 1, y: 0 }"
+              :duration="1000"
+              :delay="2000"
+            >
+              {{ $t('home.text5') }}
+            </p>
 
             <div class="mt-8">
               <NuxtLink
@@ -123,7 +132,7 @@ onMounted(() => {
                 :initial="{ opacity: 0 }"
                 :enter="{ opacity: 1 }"
                 :duration="1000"
-                :delay="2000"
+                :delay="2300"
                 :to="{ path: '/about' }"
               >
                 <DisplayButton class="mb-4 me-4">
@@ -136,7 +145,7 @@ onMounted(() => {
                 :initial="{ opacity: 0 }"
                 :enter="{ opacity: 1 }"
                 :duration="1000"
-                :delay="2300"
+                :delay="2600"
                 :to="{ path: '/diaspora' }"
               >
                 <DisplayButton class="mb-4 me-4">
@@ -149,7 +158,7 @@ onMounted(() => {
                 :initial="{ opacity: 0 }"
                 :enter="{ opacity: 1 }"
                 :duration="1000"
-                :delay="2600"
+                :delay="2900"
                 :to="{ path: '/history' }"
               >
                 <DisplayButton class="mb-4 me-4">
@@ -165,7 +174,7 @@ onMounted(() => {
             :initial="{ opacity: 0, x: 50 }"
             :enter="{ opacity: 1, x: 0 }"
             :duration="1000"
-            :delay="2600"
+            :delay="2900"
             class="w-full mx-auto md:w-1/3 flex justify-center items-start"
           >
             <!-- <QuoteBoxCarousel /> -->

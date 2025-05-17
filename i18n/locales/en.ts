@@ -10,10 +10,11 @@ export default {
 
   // Home page
   home: {
-    text1: 'The Circassians are the indigenous people of Circassia, with a history stretching nearly 6 thousand years.',
+    text1: 'The Circassians are the indigenous people of Circassia, with a history stretching back thousands of years.',
     text2: 'In the 18th and 19th centuries, Tsarist Russia waged a century-long war of extermination, massacring entire villages, burning crops, and replacing the population with settlers from foreign ethnicities.',
     text3: 'The genocide reached its peak in the 1860s — when Circassians were forced on death marches to the Black Sea coast, crammed into ships, and deported.',
-    text4: 'In total, over 90% of the Circassian population was either slaughtered, starved, or expelled from their homeland in one of history\'s darkest yet least-known tragedies.',
+    text4: 'In total, over 90% of the Circassian population was either slaughtered, starved, or expelled from their homeland in one of history\'s darkest yet least-known crimes.',
+    text5: 'To this day, the Circassians remember this as ЦӀыцӀэкӀун (pronounced Tsitsekun, from the now-extinct Circassian Ubykh language: \'the killing of a people\') and observe May 21 as a global day of mourning—honoring the lives lost and their enduring struggle not for revenge, but for justice.',
     who_we_are: 'Who We Are',
     where_we_are_now: 'Where We Are Now',
     history: 'History',
@@ -75,7 +76,7 @@ export default {
     description: 'After suffering acts of genocide and ethnic cleansing, Circassians continue to preserve their culture in diaspora in the hopes of reuniting again, one day, at their original homeland.',
     figure_1_caption: 'Circassian Exile Migration Paths to the Ottoman Empire and the Balkans',
     figure_2_caption: 'Circassian Population Distribution Before and After the Genocide',
-    figure_3_caption: 'Circassians and Abazins in the Middle East',
+    figure_3_caption: 'Circassians and Abazins in the Middle East - Instagram: {\'@\'}cactusmapping (https://www.instagram.com/cactusmapping/)',
     beginning: {
       title: 'The Heart of Circassia: Before the Genocide',
       text1: 'The Circassians are recognized historically as the indigenous people of Circassia, who lived in their homeland in the North-Caucasus for thousands of years. Before the Russian invasion, Circassia was a small independent nation. They endured high costs to preserve their identity and defend their homeland in the Caucasus. Circassian society was organized around strong community ties, vibrant cultural traditions, and a deep connection to their mountainous homeland. Their economy thrived on agriculture, craftsmanship, and trade, while their unique language and customs flourished, passed down through generations. Despite external pressures, Circassians maintained their autonomy and rich cultural legacy, defining themselves as resilient and fiercely independent.',

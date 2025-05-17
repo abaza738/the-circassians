@@ -95,7 +95,7 @@ useSeoMeta({
         class="h-[300px]"
         img="/images/circassian-fighter.jpg"
         position="center 40%"
-        attribution="Elias A. Shawash - Pinterest: https://www.pinterest.com/elias1957sh4835/"
+        attribution="Ahmed Nagoev - Intagram: https://www.instagram.com/ahmed_nagoev"
       >
         <h2 class="text-2xl sm:text-4xl font-bold">
           {{ $t('about.war.title') }}
