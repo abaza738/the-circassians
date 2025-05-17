@@ -36,8 +36,8 @@ function toggleDarkMode() {
 
       <div class="cursor-pointer text-lg leading-none" @click="toggleDarkMode">
         <Transition mode="out-in">
-          <Icon v-if="colorMode.value === 'light'" name="solar:sun-2-bold" />
-          <Icon v-else name="solar:moon-outline" />
+          <Icon v-if="colorMode.value === 'dark'" name="solar:sun-2-bold" title="Switch to Light mode" />
+          <Icon v-else name="solar:moon-outline" title="Switch to Dark mode" />
         </Transition>
       </div>
     </ul>
