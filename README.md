@@ -14,6 +14,8 @@ Thank you for helping bring this project to life!
 - Madin
 - Patlichan
 
+And to those who contributed immensely through our Discord server, who wish to remain anonymous: thank you!
+
 ## Contributing
 
 Please refer to our [Contribution Guideline](./docs/Contribution%20Guideline.md).
