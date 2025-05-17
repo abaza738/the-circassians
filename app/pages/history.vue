@@ -12,7 +12,6 @@ useHead({
 
 defineOgImageComponent('Default', {
   title: i18n.t('history.title'),
-  description: i18n.t('history.introduction.title'),
 })
 </script>
 
@@ -20,7 +19,7 @@ defineOgImageComponent('Default', {
   <div class="page">
     <div class="container mx-auto flex-1 flex flex-col py-8">
       <h1 class="text-center text-4xl sm:text-[4rem] font-bold">
-        The Historical Timeline of the Circassians
+        {{ i18n.t('history.title') }}
       </h1>
 
       <Divider class="my-4" />

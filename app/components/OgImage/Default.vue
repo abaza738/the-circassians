@@ -1,7 +1,6 @@
 <script setup lang="ts">
-const { title, description } = defineProps<{
+defineProps<{
   title: string
-  description?: string
 }>()
 </script>
 
@@ -14,11 +13,8 @@ const { title, description } = defineProps<{
       <h1 class="text-[64px] font-black">
         {{ title }}
       </h1>
-      <p v-if="description" class="text-2xl text-white/70">
-        {{ description }}
-      </p>
       <p class="text-2xl font-bold">
-        the-circassians.org
+        circassian-genocide.org
       </p>
     </div>
   </div>

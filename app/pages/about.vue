@@ -12,7 +12,6 @@ useHead({
 
 defineOgImageComponent('Default', {
   title: i18n.t('about.title'),
-  description: i18n.t('about.introduction.title'),
 })
 </script>
 
