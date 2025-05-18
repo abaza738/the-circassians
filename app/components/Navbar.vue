@@ -8,24 +8,63 @@ function toggleDarkMode() {
 
 <template>
   <nav class="sticky top-0 w-full text-sm text-accent-50 border-b-2 border-accent bg-primary-800/80 backdrop-blur-md z-20">
-    <div class="container grid grid-cols-[auto_1fr_auto] items-center mx-auto gap-6 p-4 md:px-0">
-      <NuxtLink to="/" aria-label="home-page" class="me-auto">
+    <div class="container grid grid-cols-[auto_1fr_auto] items-center mx-auto gap-6 p-4 md:px-0 text-lg">
+      <NuxtLink to="/" aria-label="home-page" class="hidden sm:inline me-auto">
         <img src="/images/adiga.svg" alt="circassian-flag" class="h-[2rem]">
       </NuxtLink>
 
+      <LazyUSlideover side="left" :title="$t('title')">
+        <UButton
+          icon="solar:hamburger-menu-linear"
+          variant="ghost"
+          class="flex sm:hidden hover"
+          aria-label="Mobile Side Menu"
+          :ui="{ leadingIcon: 'text-accent-50' }"
+        />
+
+        <template #body>
+          <ul class="flex flex-col justify-center">
+            <NuxtLink active-class="font-bold dark:text-accent-100" :to="{ path: '/' }">
+              <li class="p-6">
+                {{ $t('navbar.home') }}
+              </li>
+            </NuxtLink>
+            <NuxtLink active-class="font-bold dark:text-accent-100" :to="{ path: '/about' }">
+              <li class="p-6">
+                {{ $t('navbar.about') }}
+              </li>
+            </NuxtLink>
+            <NuxtLink active-class="font-bold dark:text-accent-100" :to="{ path: '/diaspora' }">
+              <li class="p-6">
+                {{ $t('navbar.diaspora') }}
+              </li>
+            </NuxtLink>
+            <NuxtLink active-class="font-bold dark:text-accent-100" :to="{ path: '/history' }">
+              <li class="p-6">
+                {{ $t('navbar.history') }}
+              </li>
+            </NuxtLink>
+          </ul>
+        </template>
+
+        <template #footer>
+          <Footer />
+        </template>
+      </LazyUSlideover>
+
       <ul class="hidden sm:flex items-center justify-center gap-8">
         <li>
-          <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/about' }">
+          <NuxtLink class="hover:text-accent-100" active-class="font-bold text-accent-200" :to="{ path: '/about' }">
             {{ $t('navbar.about') }}
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/diaspora' }">
+          <NuxtLink class="hover:text-accent-100" active-class="font-bold text-accent-200" :to="{ path: '/diaspora' }">
             {{ $t('navbar.diaspora') }}
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink active-class="font-bold text-accent-100" :to="{ path: '/history' }">
+          <NuxtLink class="hover:text-accent-100" active-class="font-bold text-accent-200" :to="{ path: '/history' }">
             {{ $t('navbar.history') }}
           </NuxtLink>
         </li>

@@ -3,6 +3,7 @@ export default {
   description: 'Discover the history of the largest and most deadly forgotten genocide of the 19th century.',
 
   navbar: {
+    home: 'Home',
     about: 'About',
     diaspora: 'Diaspora',
     history: 'History',
