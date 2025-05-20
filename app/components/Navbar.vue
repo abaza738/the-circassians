@@ -54,6 +54,11 @@ function toggleDarkMode() {
 
       <ul class="hidden sm:flex items-center justify-center gap-8">
         <li>
+          <NuxtLink class="hover:text-accent-100" active-class="font-bold text-accent-200" :to="{ path: '/' }">
+            {{ $t('navbar.home') }}
+          </NuxtLink>
+        </li>
+        <li>
           <NuxtLink class="hover:text-accent-100" active-class="font-bold text-accent-200" :to="{ path: '/about' }">
             {{ $t('navbar.about') }}
           </NuxtLink>
