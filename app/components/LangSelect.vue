@@ -3,7 +3,7 @@ const { locale, locales, setLocale } = useI18n()
 </script>
 
 <template>
-  <UDropdownMenu :items="locales" :ui="{ content: 'bg-accent-50 dark:bg-night min-w-auto ring-0', group: 'flex flex-col' }">
+  <UDropdownMenu :items="locales">
     <template #item="{ item }">
       <div class="flex items-center gap-2 cursor-pointer" @click="setLocale(item.code)">
         <img :src="`/images/lang/${item.code}.png`" :alt="`${item.code}-language-flag`" class="object-contain h-[1.25rem]">
