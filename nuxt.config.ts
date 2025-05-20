@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       { name: 'Rubik Wet Paint', provider: 'google' },
-      { name: 'Playfair Display', provider: 'google' },
+      { name: 'Lora', provider: 'google' },
       { name: 'Manrope', provider: 'google' },
     ],
   },
@@ -59,7 +59,7 @@ export default defineNuxtConfig({
     ],
   },
   ogImage: {
-    fonts: ['Playfair Display', 'Manrope'],
+    fonts: ['Lora', 'Manrope'],
     googleFontMirror: true,
   },
   scripts: {
