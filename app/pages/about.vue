@@ -24,7 +24,7 @@ useSeoMeta({
 
 <template>
   <div class="page">
-    <div class="container flex-1 flex flex-col py-8 mx-auto">
+    <div class="container flex-1 flex flex-col gap-8 py-8 mx-auto">
       <SectionHeader
         img="/images/circassian-genocide-remembrance-day-nalchik.jpg"
         attribution="Circassian Roots - Pinterest: https://www.pinterest.com/circassianroots/"

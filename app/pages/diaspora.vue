@@ -24,7 +24,7 @@ useSeoMeta({
 
 <template>
   <div class="page">
-    <div class="container flex-1 flex flex-col py-8 mx-auto">
+    <div class="container flex-1 flex flex-col gap-8 py-8 mx-auto">
       <figure class="flex flex-col items-center justify-center gap-2 mb-4">
         <img src="/images/maps/genoicde_routes_1.jpg" alt="Circassian Exile Migration Paths" class="w-4/5 rounded-lg shadow-md mx-auto">
         <figcaption class="text-center text-sm text-gray-600">
