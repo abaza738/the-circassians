@@ -32,7 +32,7 @@ onMounted(() => {
 
 <template>
   <div class="page">
-    <section class="relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 p-4 md:p-8">
+    <section class="relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 p-4 md:p-8 overflow-hidden">
       <div class="absolute top-0 left-0 w-full h-full z-[0]">
         <video class="w-full h-full object-cover" autoplay loop muted playsinline preload="auto">
           <source src="/video/hero.mp4">
