@@ -3,8 +3,8 @@ export default defineAppConfig({
     dropdownMenu: {
       slots: {
         content: 'bg-accent-50 dark:bg-night min-w-auto ring-0',
-        group: 'flex flex-col'
-      }
+        group: 'flex flex-col',
+      },
     },
     slideover: {
       slots: {

@@ -49,7 +49,9 @@ defineProps<{
           :class="{ 'sm:text-end': index % 2 === 1 }"
           dir="ltr"
         >
-          <h4 class="text-xl font-bold">{{ item.title }}</h4>
+          <h4 class="text-xl font-bold">
+            {{ item.title }}
+          </h4>
           <p>{{ item.description }}</p>
         </article>
       </div>

@@ -119,7 +119,9 @@ const data = [
       <Timeilne :data />
 
       <article>
-        <h3 class="text-red-600 text-6xl sm:text-8xl font-bold text-center">1864</h3>
+        <h3 class="text-red-600 text-6xl sm:text-8xl font-bold text-center">
+          1864
+        </h3>
 
         <p>The Russian Empire systematically expelled approximately 1.5 million Circassians from their ancestral lands in the northwest Caucasus, forcing them into exile primarily within the Ottoman Empire.</p>
         <p>This mass deportation was marked by extreme brutality: villages were razed, civilians were massacred, and starvation was employed as a weapon.</p>
