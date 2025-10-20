@@ -72,4 +72,9 @@ export default defineNuxtConfig({
       colors: ['primary', 'secondary', 'error', 'warning', 'accent', 'night', 'success', 'info'],
     },
   },
+  vite: {
+    optimizeDeps: {
+      include: ['@vue/devtools-core', '@vue/devtools-kit'],
+    },
+  },
 })

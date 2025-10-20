@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.2.0",
   "private": true,
-  "packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247",
+  "packageManager": "pnpm@10.18.3",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -11,26 +11,28 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint",
-    "fix": "eslint --fix"
+    "fix": "eslint --fix",
+    "update": "npx npm-check-updates -u"
   },
   "dependencies": {
-    "@nuxt/icon": "1.12.0",
-    "@nuxt/image": "1.10.0",
-    "@nuxt/scripts": "0.11.6",
-    "@nuxt/ui": "^3.1.1",
-    "@nuxtjs/i18n": "9.5.3",
-    "@nuxtjs/seo": "3.0.3",
-    "@unhead/vue": "^2.0.3",
+    "@nuxt/icon": "2.0.0",
+    "@nuxt/image": "1.11.0",
+    "@nuxt/scripts": "0.13.0",
+    "@nuxt/ui": "^4.0.1",
+    "@nuxtjs/i18n": "10.1.1",
+    "@nuxtjs/seo": "3.2.2",
+    "@unhead/vue": "^2.0.19",
     "@vueuse/motion": "^3.0.3",
-    "@vueuse/nuxt": "13.1.0",
-    "nuxt": "^3.17.2",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "@vueuse/nuxt": "13.9.0",
+    "nuxt": "^4.1.3",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.13.0",
-    "@iconify-json/solar": "^1.2.2",
-    "eslint": "^9.26.0",
-    "eslint-plugin-format": "^1.0.1"
+    "@antfu/eslint-config": "^6.0.0",
+    "@iconify-json/material-symbols": "^1.2.42",
+    "@iconify-json/solar": "^1.2.4",
+    "eslint": "^9.38.0",
+    "eslint-plugin-format": "^1.0.2"
   }
 }
