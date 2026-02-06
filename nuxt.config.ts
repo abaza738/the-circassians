@@ -37,6 +37,14 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
   ],
 
+  nitro: {
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
+  },
+
   // Modules options
   colorMode: {
     classSuffix: '',
