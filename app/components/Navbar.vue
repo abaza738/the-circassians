@@ -10,7 +10,7 @@ function toggleDarkMode() {
   <nav class="sticky top-0 w-full text-sm text-accent-50 border-b-2 border-accent bg-primary-800/80 backdrop-blur-md z-20">
     <div class="container grid grid-cols-[auto_1fr_auto] items-center mx-auto gap-6 p-4 md:px-0 text-lg">
       <NuxtLink to="/" aria-label="home-page" class="hidden sm:inline me-auto">
-        <img src="/images/adiga.svg" alt="circassian-flag" class="h-[2rem]">
+        <img src="/images/adiga.svg" alt="circassian-flag" class="h-8">
       </NuxtLink>
 
       <LazyUSlideover side="left" :title="$t('title')">
