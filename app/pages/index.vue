@@ -32,15 +32,15 @@ onMounted(() => {
 
 <template>
   <div class="page">
-    <section class="relative flex-1 flex flex-col items-start justify-center h-[100vh] gap-8 p-4 md:p-8 overflow-hidden">
-      <div class="absolute top-0 left-0 w-full h-full z-[0]">
+    <section class="relative flex-1 flex flex-col items-start justify-center h-screen gap-8 p-4 md:p-8 overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-full z-0">
         <video class="w-full h-full object-cover" autoplay loop muted playsinline preload="auto">
           <source src="/video/hero.mp4">
         </video>
       </div>
 
       <!-- Overlay -->
-      <div class="absolute top-0 left-0 w-full h-full z-[0] bg-night-50/90 dark:bg-night/90" />
+      <div class="absolute top-0 left-0 w-full h-full z-0 bg-night-50/90 dark:bg-night/90" />
 
       <div class="container mx-auto flex flex-col items-start justify-center gap-8">
         <NuxtImg

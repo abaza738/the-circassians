@@ -23,7 +23,7 @@ defineProps<{
               ease: 'easeOutQuad',
             },
           }"
-          class="w-[3ch] sm:flex-1 !m-0 text-2xl sm:text-[60px] font-bold"
+          class="w-[3ch] sm:flex-1 m-0! text-2xl sm:text-[60px] font-bold"
           :class="{ 'sm:text-end': index % 2 === 0 }"
         >
           {{ item.year }}
@@ -45,7 +45,7 @@ defineProps<{
               ease: 'easeOutQuad',
             },
           }"
-          class="flex-1 !m-0 py-8"
+          class="flex-1 m-0! py-8"
           :class="{ 'sm:text-end': index % 2 === 1 }"
           dir="ltr"
         >
