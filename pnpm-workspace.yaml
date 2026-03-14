@@ -1,6 +1,9 @@
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - '@tailwindcss/oxide'
-  - esbuild
-  - sharp
-  - vue-demi
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  sharp: true
+  vue-demi: true

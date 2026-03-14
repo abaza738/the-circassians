@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@vueuse/nuxt',
     '@nuxt/scripts',
+    'nuxt-og-image',
   ],
 
   nitro: {
@@ -51,9 +52,9 @@ export default defineNuxtConfig({
   },
   fonts: {
     families: [
-      { name: 'Rubik Wet Paint', provider: 'google' },
-      { name: 'Lora', provider: 'google' },
-      { name: 'Manrope', provider: 'google' },
+      { name: 'Rubik Wet Paint', provider: 'google', global: true },
+      { name: 'Lora', provider: 'google', global: true },
+      { name: 'Manrope', provider: 'google', global: true },
     ],
   },
   i18n: {
@@ -65,10 +66,6 @@ export default defineNuxtConfig({
       // { code: 'fr', name: 'Français', file: 'fr.ts' },
       // { code: 'tr', name: 'Türkçe', file: 'tr.ts' },
     ],
-  },
-  ogImage: {
-    fonts: ['Lora', 'Manrope'],
-    googleFontMirror: true,
   },
   scripts: {
     registry: {

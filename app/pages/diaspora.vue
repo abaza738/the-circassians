@@ -10,8 +10,9 @@ useHead({
   titleTemplate: title => `${title} | ${i18n.t('diaspora.title')}`,
 })
 
-defineOgImageComponent('Default', {
+defineOgImage('Default.takumi', {
   title: i18n.t('diaspora.title'),
+  description: i18n.t('diaspora.og_description')
 })
 
 useSeoMeta({

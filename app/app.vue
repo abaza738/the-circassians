@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const i18n = useI18n()
 
-defineOgImageComponent('Default', {
+defineOgImage('Default.takumi', {
   title: i18n.t('title'),
 })
 

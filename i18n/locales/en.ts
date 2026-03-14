@@ -73,7 +73,8 @@ export default {
 
   // Diaspora Page
   diaspora: {
-    title: 'The Circassian Diaspora: Genocide, Exile and Return ',
+    title: 'The Circassian Diaspora',
+    og_description: 'Genocide, Exile, and Return',
     description: 'After suffering acts of genocide and ethnic cleansing, Circassians continue to preserve their culture in diaspora in the hopes of reuniting again, one day, at their original homeland.',
     figure_1_caption: 'Circassian Exile Migration Paths to the Ottoman Empire and the Balkans',
     figure_2_caption: 'Circassian Population Distribution Before and After the Genocide',
@@ -112,7 +113,8 @@ export default {
 
   // Historical Timeline Page
   history: {
-    title: 'History: Timeline of the Circassian Genocide',
+    title: 'History',
+    og_description: 'Timeline of the Circassian Genocide',
     introduction: {
       title: 'The Circassians: An Ancient Nation',
       text1: 'The Circassians are an ancient nation. They are historically recognized as the indigenous people of Circassia. Their homeland was located on the northeastern shore of the Black Sea. The Circassians contributed significantly to human civilization. They also endured high costs to preserve their identity in the Caucasus. Before the Russian invasion, Circassia was a small independent nation.',

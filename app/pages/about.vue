@@ -10,7 +10,7 @@ useHead({
   titleTemplate: title => `${title} | ${i18n.t('about.title')}`,
 })
 
-defineOgImageComponent('Default', {
+defineOgImage('Default.takumi', {
   title: i18n.t('about.title'),
 })
 
@@ -29,7 +29,7 @@ useSeoMeta({
         img="/images/circassian-genocide-remembrance-day-nalchik.jpg"
         attribution="Circassian Roots - Pinterest: https://www.pinterest.com/circassianroots/"
         position="center 60%"
-        class="h-[500px]"
+        class="h-125"
       >
         <h1 class="text-center text-4xl sm:text-[4rem] font-bold">
           {{ $t('about.title') }}
@@ -39,7 +39,7 @@ useSeoMeta({
       <Divider class="my-4" />
 
       <SectionHeader
-        class="h-[300px]"
+        class="h-75"
         img="/images/circassian-men-in-traditional-clothing.jpg"
         position="center 25%"
         attribution="Circassian Roots - Pinterest: https://www.pinterest.com/circassianroots/"
@@ -56,7 +56,7 @@ useSeoMeta({
       <Divider class="my-4" />
 
       <SectionHeader
-        class="h-[300px]"
+        class="h-75"
         img="/images/circassians-belonging-to-the-bzhedug-tribe-19th-century.jpg"
         position="center 30%"
         attribution="Circassian Roots - Pinterest: https://www.pinterest.com/circassianroots/"
@@ -73,7 +73,7 @@ useSeoMeta({
       <Divider class="my-4" />
 
       <SectionHeader
-        class="h-[300px]"
+        class="h-75"
         img="/images/circassian-flag.jpg"
         position="center 55%"
         attribution="Circassian Roots - Pinterest: https://www.pinterest.com/circassianroots/"
@@ -92,7 +92,7 @@ useSeoMeta({
       <Divider class="my-4" />
 
       <SectionHeader
-        class="h-[300px]"
+        class="h-75"
         img="/images/circassian-fighter.jpg"
         position="center 40%"
         attribution="Ahmed Nagoev - Intagram: https://www.instagram.com/ahmed_nagoev"
@@ -110,7 +110,7 @@ useSeoMeta({
       <Divider class="my-4" />
 
       <SectionHeader
-        class="h-[300px]"
+        class="h-75"
         img="/images/circassian-dancer-jerash.jpg"
         position="center 45%"
         attribution="Bushra Nabas - Pinterest: https://www.pinterest.com/bnapashqwa/"
@@ -126,7 +126,7 @@ useSeoMeta({
       <Divider class="my-4" />
 
       <SectionHeader
-        class="h-[300px]"
+        class="h-75"
         img="/images/circassian-band-myst.jpg"
         attribution="Circassian Roots - Pinterest: https://www.pinterest.com/circassianroots/"
       >
@@ -141,7 +141,7 @@ useSeoMeta({
       <Divider class="my-4" />
 
       <SectionHeader
-        class="h-[300px]"
+        class="h-75"
         img="/images/circassian-musical-instruments.jpg"
         position="center 30%"
       >
@@ -156,7 +156,7 @@ useSeoMeta({
       <Divider class="my-4" />
 
       <SectionHeader
-        class="h-[300px]"
+        class="h-75"
         img="/images/circassian-children.jpg"
         position="center 60%"
         attribution="Bushra Nabas - Pinterest: https://www.pinterest.com/bnapashqwa/"
