@@ -10,11 +10,6 @@ useHead({
   titleTemplate: title => `${title} | ${i18n.t('diaspora.title')}`,
 })
 
-defineOgImage('Default.takumi', {
-  title: i18n.t('diaspora.title'),
-  description: i18n.t('diaspora.og_description')
-})
-
 useSeoMeta({
   title: i18n.t('diaspora.title'),
   description: i18n.t('diaspora.description'),
@@ -94,6 +89,12 @@ useSeoMeta({
 
       <!-- Cultural Revival -->
       <SectionHeaderNoImage :title="$t('diaspora.revival.title')" />
+      <figure class="flex flex-col items-center justify-center gap-2 mb-4 mt-8">
+        <img src="/images/abx-xase-opening-1.jpg" alt="ABX (DANEF) Circassian Language Organization Opening in Natirbeyhable, Turkey" class="w-4/5  rounded-lg shadow-md mx-auto">
+        <figcaption class="text-center text-sm text-gray-600">
+          {{ $t('diaspora.figure_4_caption') }}
+        </figcaption>
+      </figure>
       <p class="text-lg mt-2 mb-2">
         {{ $t('diaspora.revival.text1') }}
       </p>
@@ -108,6 +109,12 @@ useSeoMeta({
 
       <!-- The Future -->
       <SectionHeaderNoImage :title="$t('diaspora.future.title')" />
+        <figure class="flex flex-col items-center justify-center gap-2 mb-4 mt-8">
+        <img src="/images/Мафэхабль.jpg" alt="Mafehabl - A Village built for the Circassian Repatriates from Kosovo" class="w-4/5  rounded-lg shadow-md mx-auto">
+        <figcaption class="text-center text-sm text-gray-600">
+          {{ $t('diaspora.figure_5_caption') }}
+        </figcaption>
+      </figure>
       <p class="text-lg mt-2 mb-2">
         {{ $t('diaspora.future.text1') }}
       </p>

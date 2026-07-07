@@ -1,5 +1,5 @@
 <template>
-  <button class="cta py-4 px-10 rounded-md transition-all duration-300 text-sm font-bold tracking-widest uppercase outline-none border-none cursor-pointer">
+  <button class="cta py-4 px-10 rounded-md transition-all duration-300 font-bold tracking-widest uppercase outline-none border-none cursor-pointer">
     <slot />
   </button>
 </template>

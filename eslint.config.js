@@ -15,4 +15,13 @@ export default antfu({
     'vue/max-attributes-per-line': 'off',
     'style/no-trailing-spaces': ['off', { filePatterns: ['**/*.md'] }],
   },
+
+  overrides: [
+    {
+      files: ['**/locales/ad-la.ts'],
+      rules: {
+        'style/quotes': ['error', 'double', { avoidEscape: true }],
+      },
+    },
+  ],
 })

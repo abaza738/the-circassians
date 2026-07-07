@@ -9,25 +9,34 @@ useHead({
   titleTemplate: title => `${title}`,
 })
 
+const i18n = useI18n()
+const localePath = useLocalePath()
 const quotes = ref([])
 
 async function loadQuotes() {
   try {
-    const response = await fetch('/homepage_quotes.json')
+    const locale = i18n.locale.value
+    const response = await fetch(`/quotes/${locale}.json`)
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
     }
-    const data = await response.json()
-    quotes.value = data
+    quotes.value = await response.json()
   }
   catch (error) {
     console.error('Failed to load quotes:', error)
+    quotes.value = []
   }
 }
 
+// Load quotes on mount and when language changes
 onMounted(() => {
   loadQuotes()
 })
+
+watch(() => i18n.locale.value, () => {
+  loadQuotes()
+})
+
 </script>
 
 <template>
@@ -74,9 +83,9 @@ onMounted(() => {
               :enter="{ opacity: 1, y: 0 }"
               :duration="1000"
               :delay="600"
-              class="text-2xl sm:text-4xl z-10"
+              class="text-2xl sm:text-xl z-10"
             >
-              Nation <span class="font-bold">Erased</span> — People <span class="font-bold">Live</span>
+              {{ $t('home.heading') }}
             </h2>
 
             <p
@@ -85,7 +94,7 @@ onMounted(() => {
               :enter="{ opacity: 1, y: 0 }"
               :duration="1000"
               :delay="900"
-              class="mt-4"
+              class="mt-4 text-lg sm:text-md"
             >
               {{ $t('home.text1') }}
             </p>
@@ -95,6 +104,7 @@ onMounted(() => {
               :enter="{ opacity: 1, y: 0 }"
               :duration="1000"
               :delay="1100"
+              class="text-lg sm:text-md"
             >
               {{ $t('home.text2') }}
             </p>
@@ -104,6 +114,7 @@ onMounted(() => {
               :enter="{ opacity: 1, y: 0 }"
               :duration="1000"
               :delay="1400"
+              class="text-lg sm:text-md"
             >
               {{ $t('home.text3') }}
             </p>
@@ -113,6 +124,7 @@ onMounted(() => {
               :enter="{ opacity: 1, y: 0 }"
               :duration="1000"
               :delay="1700"
+              class="text-lg sm:text-md"
             >
               {{ $t('home.text4') }}
             </p>
@@ -122,20 +134,21 @@ onMounted(() => {
               :enter="{ opacity: 1, y: 0 }"
               :duration="1000"
               :delay="2000"
+              class="text-lg sm:text-md"
             >
               {{ $t('home.text5') }}
             </p>
 
-            <div class="mt-8">
+            <div class="mt-8 ">
               <NuxtLink
                 v-motion
                 :initial="{ opacity: 0 }"
                 :enter="{ opacity: 1 }"
                 :duration="1000"
                 :delay="2300"
-                :to="{ path: '/about' }"
+                :to="localePath('/about')"
               >
-                <DisplayButton class="mb-4 me-4">
+                <DisplayButton class="mb-4 me-4 text-lg">
                   {{ $t('home.who_we_are') }}
                 </DisplayButton>
               </NuxtLink>
@@ -146,9 +159,9 @@ onMounted(() => {
                 :enter="{ opacity: 1 }"
                 :duration="1000"
                 :delay="2600"
-                :to="{ path: '/diaspora' }"
+                :to="localePath('/diaspora')"
               >
-                <DisplayButton class="mb-4 me-4">
+                <DisplayButton class="mb-4 me-4 text-lg">
                   {{ $t('home.where_we_are_now') }}
                 </DisplayButton>
               </NuxtLink>
@@ -159,9 +172,9 @@ onMounted(() => {
                 :enter="{ opacity: 1 }"
                 :duration="1000"
                 :delay="2900"
-                :to="{ path: '/history' }"
+                :to="localePath('/history')"
               >
-                <DisplayButton class="mb-4 me-4">
+                <DisplayButton class="mb-4 me-4 text-lg">
                   {{ $t('home.history') }}
                 </DisplayButton>
               </NuxtLink>

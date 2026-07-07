@@ -20,6 +20,9 @@ logs
 .idea
 temp
 
+# Local issue drafts
+ISSUE_*.md
+
 # Local env files
 .env
 .env.*

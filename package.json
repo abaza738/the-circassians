@@ -36,6 +36,7 @@
     "@takumi-rs/wasm": "^0.72.0",
     "eslint": "^10.0.3",
     "eslint-plugin-format": "^2.0.1",
-    "nuxt-og-image": "^6.0.1"
+    "nuxt-og-image": "^6.5.0",
+    "wrangler": "^4.84.1"
   }
 }

@@ -1,10 +1,6 @@
 <script setup lang="ts">
 const i18n = useI18n()
 
-defineOgImage('Default.takumi', {
-  title: i18n.t('title'),
-})
-
 useSeoMeta({
   title: i18n.t('title'),
   description: i18n.t('description'),

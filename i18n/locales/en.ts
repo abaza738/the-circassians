@@ -11,6 +11,7 @@ export default {
 
   // Home page
   home: {
+    heading: 'Nation Erased — People Live',
     text1: 'The Circassians are the indigenous people of Circassia, with a history stretching back thousands of years.',
     text2: 'In the 18th and 19th centuries, Tsarist Russia waged a century-long war of extermination, massacring entire villages, burning crops, and replacing the population with settlers from foreign ethnicities.',
     text3: 'The genocide reached its peak in the 1860s — when Circassians were forced on death marches to the Black Sea coast, crammed into ships, and deported.',
@@ -39,7 +40,7 @@ export default {
       text1: 'The cultural richness of the Circassians is deeply intertwined with their unique linguistic heritage. The Circassian language family comprises two main branches: Adyghe, also known as West Circassian, and Kabardian, or East Circassian. While these two languages are highly mutually intelligible, they exhibit distinct phonetic and lexical differences, leading some linguists to classify them as separate languages. Within Adyghe and Kabardian, a variety of dialects further showcase the linguistic diversity of the Circassian people. This linguistic heritage serves as a vital link to their past and a cornerstone of their cultural identity.',
       text2: 'Central to Circassian culture is Adyghe Xabze, an ancient and comprehensive unwritten code of conduct that governs virtually all aspects of social life. This ethical and philosophical doctrine emphasizes core values such as profound respect for elders and women, the sacred duty of hospitality, unwavering honor, truthfulness, and bravery. Xabze also promotes endogamous marriage as a means of preserving Circassian culture and discourages negative traits like deception and greed while encouraging positive actions such as helping the weak and standing up for the insulted. The thʹamaté, or regional elder, plays a crucial role in interpreting and upholding Xabze, while the Khase, a local advisory council, serves as a community forum for discussing and maintaining these principles.',
       text3: 'Circassian traditions and customs are rich and varied, reflecting a deep respect for social etiquette and community bonds. These include specific rituals surrounding birth and christening, detailed customs for upbringing that emphasize respect and dignity, and elaborate marriage traditions, sometimes involving ritualistic elopement or bride kidnapping. The renowned Circassian hospitality, where guests are treated with utmost care and respect, is a cornerstone of their social fabric.',
-      text4: 'The material culture of the Circassians is equally significant. Traditional attire for men includes the Cherkesska, a long coat adorned with decorative bullet pouches, while women wear elegant, intricately embroidered dresses and headscarves, each reflecting social status and tribal affiliation. Their cuisine features fresh, locally sourced ingredients and bold flavors, with popular dishes like shashlik (grilled meat skewers) and chips pasta. Traditional crafts, including intricate metalwork and weaving, are highly valued. The use of Tamgas, unique family stamps or seals, served as symbols of identity and were used to mark possessions and documents, highlighting the importance of lineage and heritage.',
+      text4: 'The material culture of the Circassians is equally significant. Traditional attire for men includes the Cherkesska, a long coat adorned with decorative bullet pouches, while women wear elegant, intricately embroidered dresses and headscarves, each reflecting social status and tribal affiliation. Their cuisine features fresh, locally sourced ingredients and bold flavors, with popular dishes like Haluzh and Ships Pasta. Traditional crafts, including intricate metalwork and weaving, are highly valued. The use of Tamgas, unique family stamps or seals, served as symbols of identity and were used to mark possessions and documents, highlighting the importance of lineage and heritage.',
       text5: 'The rich folklore and mythology of the Circassians, passed down through generations, provide insights into their ancient beliefs and values. Their mythology reflects a fascinating blend of pagan beliefs, including the worship of nature and various deities, alongside influences from Christianity and later Islam. The epic tales of the Narts, a mythical race of heroes, are central to their oral tradition, embodying the ideals of courage, honor, and wisdom.',
     },
     war: {
@@ -79,6 +80,8 @@ export default {
     figure_1_caption: 'Circassian Exile Migration Paths to the Ottoman Empire and the Balkans',
     figure_2_caption: 'Circassian Population Distribution Before and After the Genocide',
     figure_3_caption: 'Circassians and Abazins in the Middle East - Instagram: {\'@\'}cactusmapping (https://www.instagram.com/cactusmapping/)',
+    figure_4_caption: 'ABX (DANEF) Circassian Language Organization Opening in Natirbeyhable, Turkey',
+    figure_5_caption: 'Mafehabl - A Village built for the Circassian Repatriates from Kosovo',
     beginning: {
       title: 'The Heart of Circassia: Before the Genocide',
       text1: 'The Circassians are recognized historically as the indigenous people of Circassia, who lived in their homeland in the North-Caucasus for thousands of years. Before the Russian invasion, Circassia was a small independent nation. They endured high costs to preserve their identity and defend their homeland in the Caucasus. Circassian society was organized around strong community ties, vibrant cultural traditions, and a deep connection to their mountainous homeland. Their economy thrived on agriculture, craftsmanship, and trade, while their unique language and customs flourished, passed down through generations. Despite external pressures, Circassians maintained their autonomy and rich cultural legacy, defining themselves as resilient and fiercely independent.',
@@ -93,8 +96,8 @@ export default {
     },
     today: {
       title: 'Modern Diaspora Dynamics: A Global Network',
-      text1: 'Today, significant Circassian diaspora communities exist in numerous countries, including Turkey, Jordan, Syria, Israel, Germany, the United States, Saudi Arabia, Libya, Iraq, Iran, and Egypt. The largest diaspora population is in Turkey, estimated at nearly six million, accounting for almost 80 percent of the overall community. Another source states about 6 million people are diaspora, including 1.5 million citizens of Turkey. In Jordan, an estimated 17% of the community still speaks Adyghe, reflecting strong cultural preservation efforts in the region.',
-      text2: 'Circassians in Syria are estimated to be around 1% of the population, and in Israel, they number approximately 4,000-5,000 residing mainly in the villages of Kfar Kama in the Galilee, and Rehaniya. Small, largely urban communities exist in the United States, and there are communities in various European countries. These communities, though scattered, maintain deep connections to their heritage and continue to practice their customs, especially through cultural centers and social gatherings.',
+      text1: 'Today, significant Circassian diaspora communities exist in numerous countries, including Turkey, Jordan, Syria, Israel, Germany, the United States, Saudi Arabia, Libya, Iraq, Iran, and Egypt. The largest diaspora population is in Turkey, estimated at nearly three million, accounting for almost 80 percent of the overall community. Another source states about 6 million people are diaspora, including 1.5 million citizens of Turkey. In Jordan, an estimated 17% of the community still speaks Adyghe, reflecting strong cultural preservation efforts in the region.',
+      text2: 'Circassians in Syria are estimated to be around 1% of the population, and in Israel, they number approximately 4,500-5,000 residing mainly in the villages of Kfar Kama in the Galilee, and Rehaniya. Small, largely urban communities exist in the United States, and there are communities in various European countries. These communities, though scattered, maintain deep connections to their heritage and continue to practice their customs, especially through cultural centers and social gatherings.',
       text3: 'Despite the hardships and the circumstances that affected the diaspora, their bond with their historic homeland and their aspirations for a bright future help them maintain a sense of belonging to their nation. Circassian communities have worked tirelessly to preserve their language, culture, and identity. In diaspora communities, they have established cultural associations and foundations to keep their traditions alive. Advisory councils called "Adyghe Khase" exist globally, serving as unifying bodies that advocate for cultural preservation and community rights.',
     },
     revival: {
@@ -117,7 +120,90 @@ export default {
     og_description: 'Timeline of the Circassian Genocide',
     introduction: {
       title: 'The Circassians: An Ancient Nation',
-      text1: 'The Circassians are an ancient nation. They are historically recognized as the indigenous people of Circassia. Their homeland was located on the northeastern shore of the Black Sea. The Circassians contributed significantly to human civilization. They also endured high costs to preserve their identity in the Caucasus. Before the Russian invasion, Circassia was a small independent nation.',
+      text1: 'The Circassians are an ancient nation. They are historically recognized as the indigenous people of Circassia. Their homeland was located on the North-Western shore of the Black Sea. The Circassians contributed significantly to human civilization. They also endured high costs to preserve their identity in the Caucasus. Before the Russian invasion, Circassia was an independent nation.',
+    },
+    events: [
+      {
+        year: 1711,
+        title: 'Russian Invasion of Circassia Begins',
+        description: 'Tsar Peter the Great ordered an invasion of Circassia. This campaign resulted in the deaths of over 43,000 Circassians and the plundering of vast resources, including livestock and goods. Although the Russian forces eventually withdrew, this incursion marked the beginning of a series of aggressive campaigns aimed at subjugating Circassia, foreshadowing the onset of the Russo-Caucasian War in 1763.',
+      },
+      {
+        year: 1736,
+        title: 'Kabardian Circassians Ally with Russia',
+        description: 'Empress Anna Ivanovna called upon the Circassians of Kabarda to rise against their common enemy. In response to her promise to recognize Kabarda\'s independence, the Circassians joined the Russian side that same year.',
+      },
+      {
+        year: 1739,
+        title: 'Treaty of Belgrade and Betrayal of Kabarda',
+        description: 'The Russo-Turkish War ended with the Treaty of Belgrade. Despite Kabarda\'s long-standing alliance with Russia, dating back to 1557 and reaffirmed during the war, Kabarda was excluded from the peace negotiations. While the treaty acknowledged Kabarda\'s independence from both Russia and the Ottoman Empire, Russia soon violated its terms. Ultimately, Circassians were classified as \'neutral\' rather than allies, despite their military support against the Ottomans. This marked a significant shift in Russia\'s attitude toward Circassians and the broader North Caucasian peoples.',
+      },
+      {
+        year: 1763,
+        title: 'Construction of Mozdok Fort and Start of Russo-Circassian War',
+        description: 'In a move to solidify its dominance in the Caucasus, the Russian Empire began constructing a military fort in Mozdok, a town originally established by Circassians in 1759. The construction, carried out without Circassian consent, signaled imperial ambitions and sparked fierce resistance led by Prince Misost Bematiqwa. This event is widely regarded as the beginning of the Russo-Circassian War.',
+      },
+      {
+        year: 1765,
+        title: 'Circassians Refuse Russian Sovereignty',
+        description: 'Empress Catherine II issued an ultimatum to the Circassians: accept Russian sovereignty or face military subjugation by Russian and Kalmyk forces. The Circassians resolutely refused.',
+      },
+      {
+        year: 1799,
+        title: 'Russian Raids Against Western Circassians',
+        description: 'Russian General Fyodor Bursak launched a series of raids against Western Circassians, ordering the destruction of villages—including those allied with Russia.',
+      },
+      {
+        year: 1805,
+        title: 'Russian Atrocities During Kabardian Plague',
+        description: 'A devastating plague struck Kabarda, weakening its population. Exploiting this vulnerability, Russian General Glazenap ordered the burning of eighty villages to terrorize the Circassians into submission and exact revenge for a 1804 counterattack.',
+      },
+      {
+        year: 1808,
+        title: 'Russian Decision for Circassian Elimination',
+        description: 'A Russian commission in St. Petersburg decided that victory in the Caucasus required the elimination of the Circassians from their homeland.',
+      },
+      {
+        year: 1817,
+        title: 'General Yermolov Implements Terror Strategy',
+        description: 'General Yermolov arrived in the Caucasus with a strategy centered on terror, deemed by the Russians as the \'most effective\' method. Russian forces destroyed entire villages suspected of aiding resistance fighters, and carried out widespread assassinations, kidnappings, and executions. To deprive the resistance of local support, Russian troops also systematically destroyed crops, livestock, and civilian infrastructure.',
+      },
+      {
+        year: 1820,
+        title: 'Fall of Kabarda (Eastern Circassia)',
+        description: 'Kabarda (Eastern Circassia) fell to Russian forces, forcing the remaining population to flee into the mountains. The region was then resettled by Kuban Cossacks.',
+      },
+      {
+        year: 1827,
+        title: 'Circassian Confederation Established',
+        description: 'The Circassian Confederation was officially established under the leadership of Ismail Berzeg.',
+      },
+      {
+        year: 1829,
+        title: 'Treaty of Adrianople and Circassian Rejection',
+        description: 'The Treaty of Adrianople was signed, with the Ottoman Empire ceding Circassia to Russia. The Circassians rejected the treaty, asserting that their territory had always been independent and thus could not be transferred by the Ottomans. In protest, Circassian envoys were sent to England, France, and the Ottoman Empire to declare the treaty null and void.',
+      },
+      {
+        year: 1833,
+        title: 'General Zass Assumes Command',
+        description: 'General Zass assumed command. His reputation for brutality earned him the moniker Shaytaan (Devil) among the Circassians.',
+      },
+      {
+        year: 1839,
+        title: 'Hawduqo Mansur Unifies Circassia; Anapa Declared Capital',
+        description: 'Ismail Berzeg was succeeded by Hawduqo Mansur, who successfully unified much of Circassia under his leadership. That same year, Anapa was declared the official capital of Circassia.',
+      },
+      {
+        year: 1860,
+        title: 'Circassian National Congress Establishes Parliament',
+        description: 'A national congress of Circassian representatives convened in Sochi, establishing a parliament as the highest legislative authority of Circassia. Sochi was designated the capital, and Gerandiqo Berzeg was elected as the head of both the parliament and the Circassian nation.',
+      },
+    ],
+    genocide_article: {
+      p1: 'The Russian Empire systematically expelled approximately 1.5 million Circassians from their ancestral lands, from their homes and villages in the northwest Caucasus, forcing them into exile primarily within the Ottoman Empire.',
+      p2: 'This mass deportation was marked by extreme brutality: villages were razed, civilians were massacred, and starvation was employed as a weapon.',
+      p3: 'The journey to exile proved deadly for many, countless individuals succumbed to disease, starvation, or drowning during maritime transport, with some reports indicating that bodies were left unburied, falling victim to scavenging animals.',
+      p4: 'By the late 19th century, only a small fraction—estimated between 3% and 10%—of the original Circassian population remained in their homeland. The survivors established diasporic communities across the Ottoman Empire, including regions that are now Turkey, Jordan, and Syria. Today, the Circassian genocide is recognized as one of the most extensive and devastating acts of ethnic cleansing in the 19th century.',
     },
     war: {
       title: 'The Russo-Circassian War (1763-1864)',

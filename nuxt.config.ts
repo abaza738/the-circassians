@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@vueuse/nuxt',
     '@nuxt/scripts',
-    'nuxt-og-image',
+    // 'nuxt-og-image', // disabled: incompatible with unhead@2.x
   ],
 
   nitro: {
@@ -46,15 +46,22 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    '/ad': { redirect: { to: '/ad-cr', statusCode: 301 } },
+    '/ad/**': { redirect: { to: '/ad-cr/**', statusCode: 301 } },
+  },
+
   // Modules options
   colorMode: {
     classSuffix: '',
+    preference: 'light',
   },
   fonts: {
     families: [
       { name: 'Rubik Wet Paint', provider: 'google', global: true },
       { name: 'Lora', provider: 'google', global: true },
       { name: 'Manrope', provider: 'google', global: true },
+      { name: 'Noto Sans', provider: 'google', global: true },
     ],
   },
   i18n: {
@@ -62,9 +69,10 @@ export default defineNuxtConfig({
     strategy: 'prefix_and_default',
     locales: [
       { code: 'en', name: 'English', file: 'en.ts', isCatchallLocale: true },
-      // { code: 'ad', name: 'Адыгэбзэ', file: 'ad.ts' },
-      // { code: 'fr', name: 'Français', file: 'fr.ts' },
-      // { code: 'tr', name: 'Türkçe', file: 'tr.ts' },
+      { code: 'ad-cr', name: 'Адыгабзэ', file: 'ad-cr.ts' },
+      { code: 'ad-la', name: 'Adıǵabze', file: 'ad-la.ts' },
+      { code: 'fr', name: 'Français', file: 'fr.ts' },
+      { code: 'tr', name: 'Türkçe', file: 'tr.ts' },
     ],
   },
   scripts: {

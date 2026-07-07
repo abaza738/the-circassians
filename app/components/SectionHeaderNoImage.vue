@@ -20,6 +20,7 @@ const { title, subtitle } = defineProps<{
 .header-no-image {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
+  text-align: center;
 }
 </style>
