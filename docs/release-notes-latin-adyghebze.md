@@ -71,12 +71,12 @@ Previously the history page had all text hardcoded in English regardless of the 
 - Applied across all section headers on the About and Diaspora pages
 
 ### Font Size
-- Increased body font size from `16px` to `26px`
+- Increased body font size from `16px` to `20px`
 - Line height adjusted from `1.5` to match the larger size
 
 ### Font Weight
-- Set `font-weight: 575` on the body — midpoint between medium (500) and semi-bold (600)
-- Manrope is a variable font and supports fractional weights natively
+- Set `font-weight: 500` on the body
+- Uses Manrope at its shipped medium weight for improved readability
 
 ### Text Color
 - Set explicit `color: #000` on the body to ensure pure black text in light mode
