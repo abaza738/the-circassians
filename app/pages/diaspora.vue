@@ -6,13 +6,9 @@ definePageMeta({
 
 const i18n = useI18n()
 
-useHead({
-  titleTemplate: title => `${title} | ${i18n.t('diaspora.title')}`,
-})
-
 defineOgImage('Default.takumi', {
   title: i18n.t('diaspora.title'),
-  description: i18n.t('diaspora.og_description')
+  description: i18n.t('diaspora.og_description'),
 })
 
 useSeoMeta({
@@ -20,6 +16,8 @@ useSeoMeta({
   description: i18n.t('diaspora.description'),
   ogTitle: i18n.t('diaspora.title'),
   ogDescription: i18n.t('diaspora.description'),
+  twitterTitle: i18n.t('diaspora.title'),
+  twitterDescription: i18n.t('diaspora.description'),
 })
 </script>
 

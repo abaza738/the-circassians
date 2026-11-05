@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       class: 'flex-1 flex flex-col',
     },
   },
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: '2026-11-05',
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
@@ -27,6 +27,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxt/fonts', // explicit so nuxt-og-image can see it
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/i18n',
@@ -38,6 +39,11 @@ export default defineNuxtConfig({
     'nuxt-og-image',
   ],
 
+  routeRules: {
+    // @see (nuxt-modules/og-image#772), delete once a release > 7.0.7 is installed
+    '/_og/r.png': { redirect: '/_og/r/' },
+  },
+
   nitro: {
     preset: 'cloudflare_module',
     cloudflare: {
@@ -46,7 +52,8 @@ export default defineNuxtConfig({
     },
   },
 
-  // Modules options
+  aiReady: false,
+  skewProtection: false,
   colorMode: {
     classSuffix: '',
   },
@@ -57,11 +64,19 @@ export default defineNuxtConfig({
       { name: 'Manrope', provider: 'google', global: true },
     ],
   },
+  icon: {
+    clientBundle: { scan: true },
+  },
   i18n: {
     defaultLocale: 'en',
     strategy: 'prefix_and_default',
     locales: [
-      { code: 'en', name: 'English', file: 'en.ts', isCatchallLocale: true },
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en.ts',
+        isCatchallLocale: true,
+      },
       // { code: 'ad', name: 'Адыгэбзэ', file: 'ad.ts' },
       // { code: 'fr', name: 'Français', file: 'fr.ts' },
       // { code: 'tr', name: 'Türkçe', file: 'tr.ts' },
@@ -69,12 +84,21 @@ export default defineNuxtConfig({
   },
   scripts: {
     registry: {
-      googleTagManager: true,
+      googleTagManager: { trigger: 'onNuxtReady' },
     },
   },
   ui: {
     theme: {
-      colors: ['primary', 'secondary', 'error', 'warning', 'accent', 'night', 'success', 'info'],
+      colors: [
+        'primary',
+        'secondary',
+        'error',
+        'warning',
+        'accent',
+        'night',
+        'success',
+        'info',
+      ],
     },
   },
   vite: {

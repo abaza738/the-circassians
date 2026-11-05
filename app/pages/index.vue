@@ -5,8 +5,10 @@ definePageMeta({
   name: 'home',
 })
 
-useHead({
-  titleTemplate: title => `${title}`,
+const i18n = useI18n()
+
+defineOgImage('Default.takumi', {
+  title: i18n.t('title'),
 })
 
 const quotes = ref([])
@@ -51,7 +53,7 @@ onMounted(() => {
           :preload="true"
           src="/images/full-circassian-flag.svg"
           alt="The Circassian Flag"
-          class="w-auto h-[70px] sm:h-[100px] rounded-md z-10"
+          class="w-auto h-17.5 sm:h-25 rounded-md z-10"
         />
 
         <h1

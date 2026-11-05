@@ -13,10 +13,15 @@ useSeoMeta({
   ogSiteName: i18n.t('title'),
   ogTitle: i18n.t('title'),
   ogDescription: i18n.t('description'),
+  twitterTitle: i18n.t('title'),
+  twitterDescription: i18n.t('description'),
 })
 
 useHead({
   title: () => i18n.t('title'),
+  titleTemplate: title => !title || title === i18n.t('title')
+    ? i18n.t('title')
+    : `${title} | ${i18n.t('title')}`,
   bodyAttrs: {
     class: 'flex flex-col bg-accent-50 dark:bg-night text-night dark:text-accent-50 min-h-[100dvh]',
   },
