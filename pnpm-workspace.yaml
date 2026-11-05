@@ -1,6 +1,13 @@
-shellEmulator: true
+minimumReleaseAgeExcludePrune: true
 
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - semver@6.3.1
+
+shellEmulator: true
+
+overrides:
+  '@nuxt/fonts': ^1.2.0
 
 allowBuilds:
   '@parcel/watcher': true

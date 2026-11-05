@@ -4,7 +4,9 @@ const props = defineProps<{
 }>()
 
 const currentIndex = ref(0)
-useInterval(15e3, { callback: () => nextQuote() })
+useInterval(15e3, {
+  callback: () => nextQuote(),
+})
 
 function nextQuote() {
   currentIndex.value = (currentIndex.value + 1) % props.quotes.length

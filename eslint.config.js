@@ -13,6 +13,11 @@ export default antfu({
 
   rules: {
     'vue/max-attributes-per-line': 'off',
-    'style/no-trailing-spaces': ['off', { filePatterns: ['**/*.md'] }],
+    'style/no-trailing-spaces': [
+      'off',
+      {
+        filePatterns: ['**/*.md'],
+      },
+    ],
   },
 })
