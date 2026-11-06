@@ -31,7 +31,7 @@ function prevQuote() {
       aria-label="Previous quote"
       @click="prevQuote"
     >
-      <UIcon name="i-solar-alt-arrow-left-outline" />
+      <Icon name="solar:alt-arrow-left-outline" />
     </button>
 
     <button 
@@ -40,7 +40,7 @@ function prevQuote() {
       aria-label="Next quote"
       @click="nextQuote"
     >
-      <UIcon name="i-solar-alt-arrow-right-outline" />
+      <Icon name="solar:alt-arrow-right-outline" />
     </button>
   </div>
 </template>

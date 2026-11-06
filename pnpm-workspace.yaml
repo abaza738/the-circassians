@@ -6,9 +6,6 @@ trustPolicyExclude:
 
 shellEmulator: true
 
-overrides:
-  '@nuxt/fonts': ^1.2.0
-
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true

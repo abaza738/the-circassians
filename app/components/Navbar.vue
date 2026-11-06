@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
+const menu = useTemplateRef<HTMLDialogElement>('menu')
 
 function toggleDarkMode() {
   colorMode.preference = colorMode.value === 'light'
@@ -15,17 +16,31 @@ function toggleDarkMode() {
         <img src="/images/adiga.svg" alt="circassian-flag" class="h-8">
       </NuxtLink>
 
-      <LazyUSlideover side="left" :title="$t('title')">
-        <UButton
-          icon="solar:hamburger-menu-linear"
-          variant="ghost"
-          class="flex sm:hidden hover"
-          aria-label="Mobile Side Menu"
-          :ui="{ leadingIcon: 'text-accent-50' }"
-        />
+      <button
+        type="button"
+        class="flex sm:hidden p-1.5 rounded-md cursor-pointer hover:bg-primary/10"
+        :aria-label="$t('navbar.menu')"
+        @click="menu?.showModal()"
+      >
+        <Icon name="solar:hamburger-menu-linear" class="size-5" />
+      </button>
 
-        <template #body>
-          <ul class="flex flex-col justify-center">
+      <dialog
+        ref="menu"
+        :aria-label="$t('title')"
+        class="fixed inset-y-0 left-0 m-0 h-dvh max-h-none w-full max-w-none flex-col overflow-y-auto text-base bg-accent-50 dark:bg-night text-night dark:text-accent-50 open:flex -translate-x-full open:translate-x-0 starting:open:-translate-x-full transition-all transition-discrete duration-200"
+      >
+        <header class="flex items-center justify-between min-h-16 p-4 bg-primary border-b-2 border-accent-400 text-accent-50">
+          <h2 class="font-semibold">
+            {{ $t('title') }}
+          </h2>
+          <button type="button" class="flex p-1.5 cursor-pointer" :aria-label="$t('navbar.close')" @click="menu?.close()">
+            <Icon name="mdi:close" class="size-5" />
+          </button>
+        </header>
+
+        <div class="flex-1">
+          <ul class="flex flex-col justify-center" @click="menu?.close()">
             <NuxtLink active-class="font-bold dark:text-accent-100" :to="{ path: '/' }">
               <li class="p-6">
                 {{ $t('navbar.home') }}
@@ -47,12 +62,10 @@ function toggleDarkMode() {
               </li>
             </NuxtLink>
           </ul>
-        </template>
+        </div>
 
-        <template #footer>
-          <Footer />
-        </template>
-      </LazyUSlideover>
+        <Footer />
+      </dialog>
 
       <ul class="hidden sm:flex items-center justify-center gap-8">
         <li>
@@ -80,7 +93,7 @@ function toggleDarkMode() {
       <!-- Wrapper for end controls -->
       <div id="end-controls" class="flex items-center justify-end gap-6 ms-auto">
         <!-- <LangSelect /> -->
-  
+
         <!-- <span class="border-l border-white/50 h-[1rem]" /> -->
         <div class="cursor-pointer text-lg leading-none" @click="toggleDarkMode">
           <Transition mode="out-in">

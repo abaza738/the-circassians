@@ -7,6 +7,9 @@ export default {
     about: 'About',
     diaspora: 'Diaspora',
     history: 'History',
+    menu: 'Mobile Side Menu',
+    close: 'Close',
+    language: 'Change language',
   },
 
   // Home page
