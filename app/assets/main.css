@@ -1,6 +1,5 @@
 @import url(./transitions.css);
 @import "tailwindcss";
-@import "@nuxt/ui";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -47,7 +46,19 @@
   --font-heading: 'Lora';
 }
 
+html {
+  color-scheme: light;
+  &.dark {
+    color-scheme: dark;
+  }
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
+}
+
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'Manrope', serif;
   font-size: 16px;
   font-display: swap;

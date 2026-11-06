@@ -1,5 +1,10 @@
 export default {
   title: 'Le Génocide Circassien',
+  navbar: {
+    menu: 'Menu latéral',
+    close: 'Fermer',
+    language: 'Changer de langue',
+  },
   about: {
     title: 'Les Circassiens : Un Aperçu',
     introduction: {

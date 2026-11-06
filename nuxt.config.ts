@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -6,7 +8,7 @@ export default defineNuxtConfig({
       mode: 'out-in',
     },
     rootAttrs: {
-      class: 'flex-1 flex flex-col',
+      class: 'flex-1 flex flex-col isolate',
     },
   },
   compatibilityDate: '2026-11-05',
@@ -31,7 +33,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/i18n',
-    '@nuxt/ui',
+    '@nuxtjs/color-mode',
     '@vueuse/motion/nuxt',
     '@nuxtjs/seo',
     '@vueuse/nuxt',
@@ -56,8 +58,12 @@ export default defineNuxtConfig({
   skewProtection: false,
   colorMode: {
     classSuffix: '',
+    disableTransition: true,
   },
   fonts: {
+    defaults: {
+      weights: [400, 500, 600, 700],
+    },
     families: [
       { name: 'Rubik Wet Paint', provider: 'google', global: true },
       { name: 'Lora', provider: 'google', global: true },
@@ -65,6 +71,7 @@ export default defineNuxtConfig({
     ],
   },
   icon: {
+    cssLayer: 'base',
     clientBundle: { scan: true },
   },
   i18n: {
@@ -87,21 +94,10 @@ export default defineNuxtConfig({
       googleTagManager: { trigger: 'onNuxtReady' },
     },
   },
-  ui: {
-    theme: {
-      colors: [
-        'primary',
-        'secondary',
-        'error',
-        'warning',
-        'accent',
-        'night',
-        'success',
-        'info',
-      ],
-    },
-  },
   vite: {
+    plugins: [
+      tailwindcss(),
+    ],
     optimizeDeps: {
       include: ['@vue/devtools-core', '@vue/devtools-kit'],
     },

@@ -11,8 +11,8 @@ definePageMeta({
       <span class="text-2xl">Page Under Construction</span>
     </div>
 
-    <UButton @click="$router.back()">
+    <DisplayButton @click="$router.back()">
       Go Back
-    </UButton>
+    </DisplayButton>
   </div>
 </template>
