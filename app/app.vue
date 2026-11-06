@@ -25,9 +25,6 @@ useHead({
   bodyAttrs: {
     class: 'flex flex-col bg-accent-50 dark:bg-night text-night dark:text-accent-50 min-h-[100dvh]',
   },
-  link: [
-    { rel: 'icon', type: 'image/png', href: '/images/lang/ad.png' },
-  ],
 })
 </script>
 
